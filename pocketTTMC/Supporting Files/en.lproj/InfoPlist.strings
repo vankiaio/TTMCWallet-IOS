@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  pocketTTMC
+
+  Created by ttmcchain on 09/04/2018.
+  Copyright © 2018 ttmcchain. All rights reserved.
+*/
+// Localizable App Name是App在英语环境环境下显示的名称
+CFBundleDisplayName = "TTMC Wallet";
