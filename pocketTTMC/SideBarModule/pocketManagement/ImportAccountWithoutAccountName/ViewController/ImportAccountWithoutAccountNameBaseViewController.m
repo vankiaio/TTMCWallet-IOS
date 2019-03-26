@@ -74,12 +74,14 @@
     [vc1.navigationController.navigationBar setHidden: YES];
     [_allVC addObject:vc1];
     
-    ImportAccountWithoutAccountNameDoublePrivateKeyModeViewController *vc2 = [[ImportAccountWithoutAccountNameDoublePrivateKeyModeViewController alloc]init];
-    vc2.title = NSLocalizedString(@"双私钥", nil);
-    vc2.navigationController = self.navigationController;
-    [vc2.navigationController.navigationBar setHidden: YES];
-    [_allVC addObject:vc2];
-    _allVC = [NSMutableArray arrayWithObjects:vc1 , vc2, nil];
+//    ImportAccountWithoutAccountNameDoublePrivateKeyModeViewController *vc2 = [[ImportAccountWithoutAccountNameDoublePrivateKeyModeViewController alloc]init];
+//    vc2.title = NSLocalizedString(@"双私钥", nil);
+//    vc2.navigationController = self.navigationController;
+//    [vc2.navigationController.navigationBar setHidden: YES];
+//    [_allVC addObject:vc2];
+//    _allVC = [NSMutableArray arrayWithObjects:vc1 , vc2, nil];
+    // TTMC use only single key
+    _allVC = [NSMutableArray arrayWithObjects:vc1 , nil];
     self.segmentView.delegate = self;
     // 可自定义背景色和tab button的文字颜色等
     // _segmentView.selectedLineWidth = 50;
@@ -88,7 +90,7 @@
     [self.segmentView buildUI];
     self.segmentView.leftBtn.hidden = YES;
     self.segmentView.rightView.hidden = YES;
-    [self.segmentView selectTabWithIndex:1 animate:NO];
+    [self.segmentView selectTabWithIndex:0 animate:NO];
     // 显示红点，点击消失
     //                [_segmentView showRedDotWithIndex:0];
     

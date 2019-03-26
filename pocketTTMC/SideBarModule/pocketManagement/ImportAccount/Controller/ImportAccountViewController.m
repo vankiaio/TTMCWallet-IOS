@@ -163,7 +163,7 @@
 - (void)validateInputFormat{
     // 验证账号名私钥格式是否正确
     if (![RegularExpression validateTtmcAccountName:self.headerView.accountNameTF.text]) {
-        [TOASTVIEW showWithText:NSLocalizedString(@"12位字符，只能由小写字母a~z和数字1~5组成。", nil)];
+        [TOASTVIEW showWithText:NSLocalizedString(@"5~12位字符，只能由小写字母a~z和数字1~5组成。", nil)];
         [self removeLoginPasswordView];
         return;
     }

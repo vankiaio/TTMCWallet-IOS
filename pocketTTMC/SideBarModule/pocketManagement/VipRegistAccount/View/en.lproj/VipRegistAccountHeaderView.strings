@@ -17,5 +17,5 @@
 /* Class = "UIButton"; normalTitle = "私钥二合一模式 (建议新手使用)"; ObjectID = "aj3-A2-KAQ"; */
 "aj3-A2-KAQ.normalTitle" = "Two-in-one private key (For beginners)";
 
-/* Class = "UITextField"; placeholder = "由小写字母和数字1~5组成的12位账号"; ObjectID = "mcp-9O-25v"; */
-"mcp-9O-25v.placeholder" = "Make up of 1-5 and a-z, 12 characters.";
+/* Class = "UITextField"; placeholder = "由小写字母和数字1~5组成的5~12位账号"; ObjectID = "mcp-9O-25v"; */
+"mcp-9O-25v.placeholder" = "Make up of 1-5 and a-z, 5~12 characters.";

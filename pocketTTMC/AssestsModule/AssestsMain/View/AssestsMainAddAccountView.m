@@ -139,9 +139,17 @@
             [self.delegate importAccount];
         }
     }else if ([model.optionName isEqualToString:NSLocalizedString(@"创建账号", nil)]){
-        
-        if (self.delegate && [self.delegate respondsToSelector:@selector(payRegist)]) {
-            [self.delegate payRegist];
+//        if (self.delegate && [self.delegate respondsToSelector:@selector(payRegist)]) {
+//            [self.delegate payRegist];
+//        }
+        // TTMC 创建免费账号
+        if (self.checkWhetherHasFreeQuotaResult.data == YES) {
+            
+            if (self.delegate && [self.delegate respondsToSelector:@selector(freeCreateAccount)]) {
+                [self.delegate freeCreateAccount];
+            }
+        }else{
+            [TOASTVIEW showWithText:self.checkWhetherHasFreeQuotaResult.message];
         }
     }else if ([model.optionName isEqualToString:NSLocalizedString(@"我是VIP", nil)]){
         

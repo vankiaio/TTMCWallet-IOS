@@ -1,6 +1,6 @@
 
-/* Class = "UITextField"; placeholder = "由小写字母和数字1~5组成的12位账号"; ObjectID = "A8w-Ya-jcd"; */
-"A8w-Ya-jcd.placeholder" = "Make up of 1-5 and a-z, 12 characters.";
+/* Class = "UITextField"; placeholder = "由小写字母和数字1~5组成的5~12位账号"; ObjectID = "A8w-Ya-jcd"; */
+"A8w-Ya-jcd.placeholder" = "Make up of 1-5 and a-z, 5~12 characters.";
 
 /* Class = "UILabel"; text = "账号名称"; ObjectID = "DUg-4U-KSc"; */
 "DUg-4U-KSc.text" = "Input account";

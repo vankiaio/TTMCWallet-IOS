@@ -197,9 +197,12 @@ extern NSString *AlipayDidFinishNotification;
     
     NSString *blackBoxModeJson = [NSString stringWithContentsOfFile:blackBoxModeJsonPath encoding:NSUTF8StringEncoding error:nil];
     
-    if (IsStrEmpty([LEETheme currentThemeTag])) {
-        [LEETheme defaultTheme:SOCIAL_MODE];
-    }
+//    if (IsStrEmpty([LEETheme currentThemeTag])) {
+//        [LEETheme defaultTheme:SOCIAL_MODE];
+//    }
+    
+    // TTMC钱包主题使用黑盒模式
+    [LEETheme defaultTheme:BLACKBOX_MODE];
     
     //    [LEETheme defaultChangeThemeAnimationDuration:0.0f];
     

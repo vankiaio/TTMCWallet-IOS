@@ -365,7 +365,7 @@
  CreateAccountViewController.m
  */
 "创建新账号"="Create New Account";
-"12位字符，只能由小写字母a~z和数字1~5组成。"="Make up of 1-5 and a-z, 12 characters.";
+"5~12位字符，只能由小写字母a~z和数字1~5组成。"="Make up of 1-5 and a-z, 5~12 characters.";
 "如果已有账号，请点击这里导入"="Own an account? Click here to import.";
 "创建账号成功!"="Create account success!";
 
@@ -410,7 +410,7 @@
 /*
  TTMCMappingImportAccountHeaderView.m
  */
-"该功能仅适用于TTMC映射获得的私钥，且每个映射获得的私钥只能创建一个的TTMC账号。"="Only work for the private keys from TTMC mapping and could create only one accout each. \nIf you have created accout with your private key by PE or other wallet, Please Import your accout.";
+"该功能仅适用于TTMC映射获得的私钥，且每个映射获得的私钥只能创建一个的TTMC账号。"="Only work for the private keys from TTMC mapping and could create only one account each. \nIf you have created account with your private key by PE or other wallet, Please Import your account.";
 
 /*
  ImportAccountViewController.m
@@ -649,20 +649,20 @@
 /*
  AddAccountViewController.m
  */
-"添加账号"="Add TTMC accout";
+"添加账号"="Add TTMC account";
 "暂无免费名额，开放时间请留意社区动态"="No quota yet";
 
 /*
  AddAccountMainService.m
  */
-"导入账号"="Import accout";
-"创建账号"="Pay for a now account";
+"导入账号"="Import account";
+"创建账号"="Create an account";
 "我是VIP"="Use VIP code to get a new account";
 "限时免费"="Limited time free";
 "使用已有的TTMC账号"="Import now!";
 "支付费用创建新TTMC账号"="Buy TTMC account with alipay or wechat.";
 "填写注册码免费创建TTMC账号"="VIP only!";
-"不定期开放，敬请关注"="Open irregular, please keep focus";
+"创建自定义名称的TTMC账号"="Create a custom name TTMC account";
 
 /*
  PayRegistAccountViewController.m
@@ -811,16 +811,16 @@
 "立即升级"="Update now!";
 "关于我们"="About Us";
 
-"1.删除账号后您无法管理该账号、操作其中的资产或使用该账号登录Dapp  \n2.删除账号后，您无法通过PE重新找回该账号  \n3.如果您未备份私钥，删除账号有可能导致您的账号及其中的资产丢失  \n4.删除账号前，请确保您理解删除账号的意义，并已备份私钥"="1.You could not manage this accout and asset wthin it or launch dapp by this accout after block up.  \n2.Acoout COUlD NOT BE RETRIEVE. \n3.You will lose your asset if you have not backup your private keys.  \n4. Continue olny in the case you understand what you are doing and have backups.";
+"1.删除账号后您无法管理该账号、操作其中的资产或使用该账号登录Dapp  \n2.删除账号后，您无法通过PE重新找回该账号  \n3.如果您未备份私钥，删除账号有可能导致您的账号及其中的资产丢失  \n4.删除账号前，请确保您理解删除账号的意义，并已备份私钥"="1.You could not manage this account and asset wthin it or launch dapp by this account after block up.  \n2.Acoout COUlD NOT BE RETRIEVE. \n3.You will lose your asset if you have not backup your private keys.  \n4. Continue olny in the case you understand what you are doing and have backups.";
 
 "暂未导入账号"="No accounts.";
 "去添加"="Add account";
 "去设置"="Set Wallet Pwd";
-"添加TTMC账号继续操作"="Add accout before continue.";
+"添加TTMC账号继续操作"="Add account before continue.";
 "设置钱包密码继续操作"="Wallet Pwd is required to add account.";
 "跳过添加"="Don't add now.";
 "选择添加账号方式"="See assets after adding accounts.";
-"单私钥"="Single key";
+"单私钥"="private key";
 "双私钥"="Daul keys";
 "请分别输入Owner私钥和Active私钥："="Input Owner key and Active key in two boxes：";
 "请选择您想要导入的账号"="Select accounts to import:";

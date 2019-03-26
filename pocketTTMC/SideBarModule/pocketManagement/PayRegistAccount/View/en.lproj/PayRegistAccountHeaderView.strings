@@ -11,8 +11,8 @@
 /* Class = "UILabel"; text = "cpu"; ObjectID = "9vU-8G-FVQ"; */
 "9vU-8G-FVQ.text" = "cpu";
 
-/* Class = "UITextField"; placeholder = "由小写字母和数字1~5组成的12位账号"; ObjectID = "Chi-88-q4N"; */
-"Chi-88-q4N.placeholder" = "Make up of 1-5 and a-z, 12 characters.";
+/* Class = "UITextField"; placeholder = "由小写字母和数字1~5组成的5~12位账号"; ObjectID = "Chi-88-q4N"; */
+"Chi-88-q4N.placeholder" = "Make up of 1-5 and a-z, 5~12 characters.";
 
 /* Class = "UILabel"; text = "账号名称"; ObjectID = "XTC-B7-pkg"; */
 "XTC-B7-pkg.text" = "Account";
