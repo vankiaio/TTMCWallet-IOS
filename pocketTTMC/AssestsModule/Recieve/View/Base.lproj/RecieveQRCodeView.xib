@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,10 +16,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqW-d8-hab">
-                    <rect key="frame" x="37" y="123.5" width="300" height="420"/>
+                    <rect key="frame" x="37.5" y="123.5" width="300" height="360"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4JQ-wQ-cVR" userLabel="upBackgroundView">
-                            <rect key="frame" x="0.0" y="-0.5" width="300" height="313.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="313.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PE扫描二维码 , 向我转账" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ry1-r9-8J0">
                                     <rect key="frame" x="0.0" y="0.0" width="300" height="58"/>
@@ -49,7 +49,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ct-HG-rSy">
-                                    <rect key="frame" x="150" y="96" width="100" height="0.0"/>
+                                    <rect key="frame" x="150" y="96.5" width="100" height="0.0"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="100" id="K1n-fb-kpj"/>
                                     </constraints>
@@ -97,7 +97,7 @@
                         <constraint firstAttribute="trailing" secondItem="4JQ-wQ-cVR" secondAttribute="trailing" id="cAr-Td-HVw"/>
                         <constraint firstAttribute="width" constant="300" id="oTA-Ve-Cli"/>
                         <constraint firstAttribute="trailing" secondItem="1dO-cl-K9I" secondAttribute="trailing" id="qyF-4P-iKV"/>
-                        <constraint firstAttribute="height" constant="420" id="vXL-O8-l3u"/>
+                        <constraint firstAttribute="height" constant="360" id="vXL-O8-l3u"/>
                         <constraint firstAttribute="trailing" secondItem="IlB-5u-GE2" secondAttribute="trailing" id="xQS-GL-BvV"/>
                         <constraint firstAttribute="bottom" secondItem="IlB-5u-GE2" secondAttribute="bottom" id="zuQ-jn-1Zu"/>
                     </constraints>
@@ -107,12 +107,17 @@
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                     </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="IlB-5u-GE2"/>
+                        </mask>
+                    </variation>
                 </view>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="EUP-Y3-7WV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2Ll-FI-wuT"/>
-                <constraint firstItem="bqW-d8-hab" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="8fY-oB-w9S"/>
+                <constraint firstItem="bqW-d8-hab" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-30" id="8fY-oB-w9S"/>
                 <constraint firstItem="bqW-d8-hab" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Byk-Tj-Mb0"/>
             </constraints>
             <connections>

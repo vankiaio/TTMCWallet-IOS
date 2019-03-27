@@ -23,7 +23,7 @@
     tap.delegate = self;
     [self addGestureRecognizer:tap];
     
-    self.tipTextView.text = NSLocalizedString(@"1. 使用免密功能将通过本地缓存为您自动填充密码；\n 2. 退出Dapp后免密功能自动失效，下次需要重新开启；\n 3. PE不会保存您的密码。\n", nil);
+    self.tipTextView.text = NSLocalizedString(@"1. 使用免密功能将通过本地缓存为您自动填充密码；\n 2. 退出Dapp后免密功能自动失效，下次需要重新开启；\n 3. TW不会保存您的密码。\n", nil);
 }
 
 - (void)dismiss{

@@ -229,7 +229,7 @@
 }
 
 - (void)configHeaderView{
-    self.headerView.amountLabel.text = [NSString stringWithFormat:@"￥%@", [NumberFormatter displayStringFromNumber:@( self.model.asset_price_cny.doubleValue)]];
+    self.headerView.amountLabel.text = [NSString stringWithFormat:@"%@:￥%@", NSLocalizedString(@"总额", nil),[NumberFormatter displayStringFromNumber:@( self.model.balance.doubleValue)]];
     if ([self.model.asset_price_change_in_24h hasPrefix:@"-"]) {
         //        HEXCOLOR(0x1E903C) HEXCOLOR(0xB0B0B0)
         NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString: [NSString stringWithFormat:@"%@%%(%@)", self.model.asset_price_change_in_24h, NSLocalizedString(@"今日", nil)]];

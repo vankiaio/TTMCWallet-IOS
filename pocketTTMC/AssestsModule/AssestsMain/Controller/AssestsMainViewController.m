@@ -93,7 +93,8 @@
     if (!_navView) {
         _navView = [[CustomNavigationView alloc] initWithFrame:(CGRectMake(0, 0, SCREEN_WIDTH, NAVIGATIONBAR_HEIGHT))];
         if (LEETHEME_CURRENTTHEME_IS_BLACKBOX_MODE) {
-            _navView.rightBtn2.hidden = YES;
+             //TTMC Show scan QR code
+            _navView.rightBtn2.hidden = NO;
         }else{
             _navView.rightBtn2.hidden = NO;
         }

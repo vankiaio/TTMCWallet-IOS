@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -60,7 +60,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHc-c6-Cgz" customClass="BaseLabel">
-                            <rect key="frame" x="20" y="39.5" width="238" height="59.5"/>
+                            <rect key="frame" x="20" y="39.5" width="0.0" height="59.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -82,7 +82,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1J-47-Gxl">
-                            <rect key="frame" x="258" y="39.5" width="117" height="59.5"/>
+                            <rect key="frame" x="20" y="39.5" width="355" height="59.5"/>
                             <connections>
                                 <action selector="ownerTipBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="aXD-c5-Qmf"/>
                             </connections>
@@ -105,13 +105,20 @@
                         <constraint firstItem="LRw-0F-iMl" firstAttribute="top" secondItem="UCo-43-3cy" secondAttribute="bottom" id="Wux-xY-BtQ"/>
                         <constraint firstItem="diY-LW-iXE" firstAttribute="centerY" secondItem="wHc-c6-Cgz" secondAttribute="centerY" id="XXL-iD-rmb"/>
                         <constraint firstAttribute="bottom" secondItem="wHc-c6-Cgz" secondAttribute="bottom" id="YxG-am-KmH"/>
-                        <constraint firstItem="ihX-7g-8K6" firstAttribute="leading" secondItem="wHc-c6-Cgz" secondAttribute="trailing" id="iow-88-DzG"/>
-                        <constraint firstItem="m1J-47-Gxl" firstAttribute="leading" secondItem="wHc-c6-Cgz" secondAttribute="trailing" id="mon-0P-Yih"/>
+                        <constraint firstAttribute="trailing" secondItem="wHc-c6-Cgz" secondAttribute="trailing" constant="10" id="iow-88-DzG"/>
+                        <constraint firstItem="Vcq-ig-0La" firstAttribute="leading" secondItem="qIt-hQ-SnU" secondAttribute="trailing" constant="-200" id="mon-0P-Yih"/>
                         <constraint firstItem="diY-LW-iXE" firstAttribute="leading" secondItem="ihX-7g-8K6" secondAttribute="trailing" constant="10" id="oAU-In-Aa2"/>
                         <constraint firstAttribute="trailing" secondItem="diY-LW-iXE" secondAttribute="trailing" constant="20" id="pDU-4a-GEn"/>
                         <constraint firstItem="LRw-0F-iMl" firstAttribute="top" secondItem="Vcq-ig-0La" secondAttribute="bottom" id="pmb-Lq-CKk"/>
                         <constraint firstItem="LRw-0F-iMl" firstAttribute="top" secondItem="qIt-hQ-SnU" secondAttribute="top" constant="39" id="ugz-jI-yTj"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="diY-LW-iXE"/>
+                            <exclude reference="ihX-7g-8K6"/>
+                            <exclude reference="m1J-47-Gxl"/>
+                        </mask>
+                    </variation>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KU7-ts-M3D" userLabel="active Reference Base View" customClass="BaseView">
                     <rect key="frame" x="0.0" y="119" width="375" height="99"/>
@@ -213,6 +220,12 @@
                 <constraint firstAttribute="trailing" secondItem="4JZ-c1-2V0" secondAttribute="trailing" id="wpV-dY-aEb"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="4JZ-c1-2V0"/>
+                    <exclude reference="KU7-ts-M3D"/>
+                </mask>
+            </variation>
             <connections>
                 <outlet property="activePublicKeyLabel" destination="nAO-uC-pFT" id="oiD-S1-hDi"/>
                 <outlet property="activeReferenceBaseView" destination="IHk-Af-Yau" id="sK8-Qj-LqM"/>

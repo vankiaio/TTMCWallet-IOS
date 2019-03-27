@@ -111,6 +111,8 @@
     [self setupChildViewController:dappVC title:NSLocalizedString(@"发现", nil)imageName:@"application_unSelect" seleceImageName:@"application_select" BB_imageName:@"application_unSelect_BB" BB_seleceImageName:@"application_select_BB"];
 
     self.viewControllers = _VCS;
+    // TTMC钱包默认资产，并且不显示TAB
+    [self.tabBar setHidden:YES];
 }
 
 -(void)setupChildViewController:(UIViewController*)controller title:(NSString *)title imageName:(NSString *)imageName seleceImageName:(NSString *)selectImageName BB_imageName:(NSString *)BB_imageName BB_seleceImageName:(NSString *)BB_selectImageName{

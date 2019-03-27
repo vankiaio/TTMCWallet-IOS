@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,7 +16,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhh-K8-UL9" customClass="BaseView">
-                    <rect key="frame" x="0.0" y="0.0" width="290" height="667"/>
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="667"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysD-Bi-0Zz" userLabel="QRCodeButton">
                             <rect key="frame" x="242" y="0.0" width="40" height="37"/>
@@ -43,7 +43,7 @@
                             </userDefinedRuntimeAttributes>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOQ-1E-rAN" customClass="BaseLabel">
-                            <rect key="frame" x="145.5" y="128" width="0.0" height="22"/>
+                            <rect key="frame" x="145" y="128" width="0.0" height="22"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="22" id="9cD-DK-rzN"/>
                             </constraints>
@@ -63,14 +63,14 @@
                             <rect key="frame" x="0.0" y="202" width="145" height="70"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="candy_Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="6gQ-4a-tJn" userLabel="candyView">
-                                    <rect key="frame" x="59" y="0.0" width="26" height="26"/>
+                                    <rect key="frame" x="59.5" y="0.0" width="26" height="26"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="26" id="vpq-E2-fCH"/>
                                         <constraint firstAttribute="width" constant="26" id="wxg-we-KH8"/>
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="糖果积分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8l-E0-hSG" userLabel="candyLabel" customClass="BaseLabel">
-                                    <rect key="frame" x="44.5" y="36" width="57.5" height="20"/>
+                                    <rect key="frame" x="44" y="36" width="57.5" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="20" id="w5s-Sd-tSE"/>
                                     </constraints>
@@ -105,7 +105,7 @@
                             <rect key="frame" x="145.5" y="202" width="144.5" height="70"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bpvote.png" translatesAutoresizingMaskIntoConstraints="NO" id="sqS-TE-Whw" userLabel="voteImageView">
-                                    <rect key="frame" x="58.5" y="0.0" width="26" height="26"/>
+                                    <rect key="frame" x="59.5" y="0.0" width="26" height="26"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="26" id="ZWC-qG-54i"/>
                                         <constraint firstAttribute="width" constant="26" id="fnk-n4-hjW"/>
@@ -121,7 +121,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5a-MV-qEC" userLabel="bpvoteButton">
-                                    <rect key="frame" x="-0.5" y="0.0" width="144.5" height="70"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="144.5" height="70"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="70" id="nGK-z4-6tG"/>
                                     </constraints>
@@ -154,7 +154,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCE-nW-rWV">
-                            <rect key="frame" x="20" y="624" width="250" height="20"/>
+                            <rect key="frame" x="20" y="607" width="160" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="Wwh-5y-UVq"/>
                             </constraints>
@@ -177,7 +177,7 @@
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="消息中心" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feC-Ij-Bwa" customClass="BaseLabel">
-                                    <rect key="frame" x="51" y="10.5" width="57.5" height="20"/>
+                                    <rect key="frame" x="51" y="10" width="57.5" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="20" id="tCr-UN-F7e"/>
                                     </constraints>
@@ -214,7 +214,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bN9-jx-Brh" userLabel="baseView2">
-                            <rect key="frame" x="20" y="381" width="250" height="40"/>
+                            <rect key="frame" x="20" y="200" width="160" height="40"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transactionrecord_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="GNg-mW-j5c">
                                     <rect key="frame" x="20" y="12" width="16" height="16"/>
@@ -224,7 +224,7 @@
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="交易记录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgM-sz-lHS" customClass="BaseLabel">
-                                    <rect key="frame" x="51" y="10.5" width="57.5" height="20"/>
+                                    <rect key="frame" x="51" y="10" width="57.5" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="20" id="zMJ-mJ-dRm"/>
                                     </constraints>
@@ -240,7 +240,7 @@
                                     </constraints>
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvj-9U-YqF">
-                                    <rect key="frame" x="0.0" y="0.0" width="250" height="40"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="160" height="40"/>
                                     <connections>
                                         <action selector="transactionRecordBtn:" destination="FPI-HQ-coY" eventType="touchUpInside" id="TVO-ds-FvA"/>
                                     </connections>
@@ -261,7 +261,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m9c-uf-huO" userLabel="baseView3">
-                            <rect key="frame" x="20" y="441" width="250" height="40"/>
+                            <rect key="frame" x="20" y="260" width="160" height="40"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="systemSetting.png" translatesAutoresizingMaskIntoConstraints="NO" id="FJi-jm-tE0">
                                     <rect key="frame" x="20" y="12" width="16" height="16"/>
@@ -271,7 +271,7 @@
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="系统设置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jK-4q-OsG" customClass="BaseLabel">
-                                    <rect key="frame" x="51" y="10.5" width="57.5" height="20"/>
+                                    <rect key="frame" x="51" y="10" width="57.5" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="20" id="rOf-bc-PRi"/>
                                     </constraints>
@@ -287,7 +287,7 @@
                                     </constraints>
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbB-Ke-D3V">
-                                    <rect key="frame" x="0.0" y="0.0" width="250" height="40"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="160" height="40"/>
                                     <connections>
                                         <action selector="systemSetting:" destination="FPI-HQ-coY" eventType="touchUpInside" id="NhR-uG-Ppd"/>
                                     </connections>
@@ -308,7 +308,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8I0-Dq-SEK" userLabel="baseView4">
-                            <rect key="frame" x="20" y="501" width="250" height="40"/>
+                            <rect key="frame" x="20" y="320" width="160" height="40"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="versionUpdate.png" translatesAutoresizingMaskIntoConstraints="NO" id="AwC-Hc-uqt">
                                     <rect key="frame" x="20" y="12" width="16" height="16"/>
@@ -318,7 +318,7 @@
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版本更新" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gc1-sb-AhU" customClass="BaseLabel">
-                                    <rect key="frame" x="51" y="10.5" width="57.5" height="20"/>
+                                    <rect key="frame" x="51" y="10" width="57.5" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="20" id="2YS-NW-enV"/>
                                     </constraints>
@@ -334,7 +334,7 @@
                                     </constraints>
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIp-Lh-utH">
-                                    <rect key="frame" x="0.0" y="0.0" width="250" height="40"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="160" height="40"/>
                                     <connections>
                                         <action selector="versionUpdateBtn:" destination="FPI-HQ-coY" eventType="touchUpInside" id="tKQ-e0-mPN"/>
                                     </connections>
@@ -357,7 +357,7 @@
                     </subviews>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstItem="bN9-jx-Brh" firstAttribute="top" secondItem="ncc-9H-maj" secondAttribute="bottom" constant="20" id="0FP-7L-zcm"/>
+                        <constraint firstItem="bN9-jx-Brh" firstAttribute="top" secondItem="bhh-K8-UL9" secondAttribute="top" constant="200" id="0FP-7L-zcm"/>
                         <constraint firstItem="eOQ-1E-rAN" firstAttribute="centerX" secondItem="Z1t-Pz-3fi" secondAttribute="centerX" id="0va-Dn-rVX"/>
                         <constraint firstItem="8I0-Dq-SEK" firstAttribute="top" secondItem="m9c-uf-huO" secondAttribute="bottom" constant="20" id="1eg-sP-iA1"/>
                         <constraint firstItem="m9c-uf-huO" firstAttribute="top" secondItem="bN9-jx-Brh" secondAttribute="bottom" constant="20" id="33o-u9-dHo"/>
@@ -380,19 +380,30 @@
                         <constraint firstItem="ysD-Bi-0Zz" firstAttribute="leading" secondItem="bhh-K8-UL9" secondAttribute="leading" constant="242" id="bT3-L7-72V"/>
                         <constraint firstAttribute="trailing" secondItem="bN9-jx-Brh" secondAttribute="trailing" constant="20" id="cIH-bo-3el"/>
                         <constraint firstAttribute="trailing" secondItem="ncc-9H-maj" secondAttribute="trailing" constant="20" id="dM4-pR-Zid"/>
-                        <constraint firstAttribute="bottom" secondItem="gCE-nW-rWV" secondAttribute="bottom" constant="23" id="eIp-PE-Rd0"/>
+                        <constraint firstAttribute="bottom" secondItem="gCE-nW-rWV" secondAttribute="bottom" constant="40" id="eIp-PE-Rd0"/>
                         <constraint firstItem="tmG-pY-Z6P" firstAttribute="top" secondItem="xSc-WR-MOY" secondAttribute="top" id="fRG-Sf-Gtw"/>
                         <constraint firstItem="Qrt-BH-vYb" firstAttribute="top" secondItem="xSc-WR-MOY" secondAttribute="top" id="hzI-2R-zF1"/>
                         <constraint firstAttribute="trailing" secondItem="gCE-nW-rWV" secondAttribute="trailing" constant="20" id="nOg-Mn-B97"/>
-                        <constraint firstAttribute="width" constant="290" id="oBB-Q3-3t3"/>
+                        <constraint firstAttribute="width" constant="200" id="oBB-Q3-3t3"/>
                         <constraint firstItem="bN9-jx-Brh" firstAttribute="leading" secondItem="bhh-K8-UL9" secondAttribute="leading" constant="20" id="ojx-Wc-B6F"/>
                         <constraint firstItem="Qrt-BH-vYb" firstAttribute="leading" secondItem="bhh-K8-UL9" secondAttribute="leading" id="p8B-FM-mWB"/>
                         <constraint firstAttribute="trailing" secondItem="tmG-pY-Z6P" secondAttribute="trailing" id="tXy-4w-Fc4"/>
                         <constraint firstItem="xSc-WR-MOY" firstAttribute="leading" secondItem="Qrt-BH-vYb" secondAttribute="trailing" id="wbw-t3-cxW"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="Z1t-Pz-3fi"/>
+                            <exclude reference="eOQ-1E-rAN"/>
+                            <exclude reference="xSc-WR-MOY"/>
+                            <exclude reference="Qrt-BH-vYb"/>
+                            <exclude reference="tmG-pY-Z6P"/>
+                            <exclude reference="XSB-Uo-PJF"/>
+                            <exclude reference="ncc-9H-maj"/>
+                        </mask>
+                    </variation>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGH-Nr-TG1">
-                    <rect key="frame" x="290" y="0.0" width="85" height="667"/>
+                    <rect key="frame" x="200" y="0.0" width="175" height="667"/>
                     <connections>
                         <action selector="dismissSideBar:" destination="FPI-HQ-coY" eventType="touchUpInside" id="MVX-IR-Elu"/>
                     </connections>

@@ -68,7 +68,7 @@
 - (AccountManagementHeaderView *)headerView{
     if (!_headerView) {
         _headerView = [[[NSBundle mainBundle] loadNibNamed:@"AccountManagementHeaderView" owner:nil options:nil] firstObject];
-        _headerView.frame = CGRectMake(0, NAVIGATIONBAR_HEIGHT, SCREEN_WIDTH, 245);
+        _headerView.frame = CGRectMake(0, NAVIGATIONBAR_HEIGHT, SCREEN_WIDTH, 145);
         _headerView.delegate = self;
     }
     return _headerView;
@@ -373,7 +373,8 @@
     if ([self.currentAction isEqualToString:@"ExportPrivateKey"]) {
         [self.view addSubview:self.exportPrivateKeyView];
         AccountInfo *model = [[AccountsTableManager accountTable] selectAccountTableWithAccountName: self.model.account_name];
-        NSString *privateKeyStr = [NSString stringWithFormat:@"OWNKEY:\n%@    \n\nACTIVEKEY：\n%@\n",  [AESCrypt decrypt:model.account_owner_private_key password:self.loginPasswordView.inputPasswordTF.text],[AESCrypt decrypt:model.account_active_private_key password:self.loginPasswordView.inputPasswordTF.text]];
+//        NSString *privateKeyStr = [NSString stringWithFormat:@"OWNKEY:\n%@    \n\nACTIVEKEY：\n%@\n",  [AESCrypt decrypt:model.account_owner_private_key password:self.loginPasswordView.inputPasswordTF.text],[AESCrypt decrypt:model.account_active_private_key password:self.loginPasswordView.inputPasswordTF.text]];
+        NSString *privateKeyStr = [NSString stringWithFormat:@"Private Key:\n%@    \n\n",  [AESCrypt decrypt:model.account_owner_private_key password:self.loginPasswordView.inputPasswordTF.text]];
         self.exportPrivateKeyView.contentTextView.text = privateKeyStr;
         [self.loginPasswordView removeFromSuperview];
     }else if ([self.currentAction isEqualToString:@"DeleteAccount"]){
@@ -516,7 +517,7 @@
     
     OptionModel *model = [[OptionModel alloc] init];
     model.optionName = NSLocalizedString(@"删除账号", nil);
-    model.detail = NSLocalizedString(@"1.删除账号后您无法管理该账号、操作其中的资产或使用该账号登录Dapp  \n2.删除账号后，您无法通过PE重新找回该账号  \n3.如果您未备份私钥，删除账号有可能导致您的账号及其中的资产丢失  \n4.删除账号前，请确保您理解删除账号的意义，并已备份私钥", nil);
+    model.detail = NSLocalizedString(@"1.删除账号后您无法管理该账号、操作其中的资产或使用该账号登录Dapp  \n2.删除账号后，您无法通过TW重新找回该账号  \n3.如果您未备份私钥，删除账号有可能导致您的账号及其中的资产丢失  \n4.删除账号前，请确保您理解删除账号的意义，并已备份私钥", nil);
     [self.commonDialogHasPasswordTFView setModel:model];
 }
 

@@ -3,4 +3,5 @@
 "3f6-tH-LaR.text" = "Active公钥";
 
 /* Class = "UILabel"; text = "Owner公钥"; ObjectID = "UCo-43-3cy"; */
-"UCo-43-3cy.text" = "Owner公钥";
+//"UCo-43-3cy.text" = "Owner公钥";
+"UCo-43-3cy.text" = "TTMC公钥";

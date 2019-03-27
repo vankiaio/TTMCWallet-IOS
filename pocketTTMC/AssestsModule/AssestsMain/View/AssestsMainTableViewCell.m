@@ -13,6 +13,7 @@
 
 @property(nonatomic, strong) UIImageView *assestsImg;
 @property(nonatomic, strong) UILabel *nowPriceLabel;
+@property(nonatomic, strong) UILabel *assestsTokenLabel;
 @property(nonatomic, strong) UILabel *assestsBalanceLable;
 @property(nonatomic, strong) UILabel *assestsBalanceCnyLabel;
 @property(nonatomic , strong) UILabel *lable_24h;
@@ -48,6 +49,15 @@
         _nowPriceLabel.textAlignment = NSTextAlignmentRight;
     }
     return _nowPriceLabel;
+}
+
+- (UILabel *)assestsTokenLabel{
+    if (!_assestsTokenLabel) {
+        _assestsTokenLabel = [[UILabel alloc] init];
+        _assestsTokenLabel.font = [UIFont boldSystemFontOfSize:16];
+        _assestsTokenLabel.textColor = HEXCOLOR(0x2A2A2A);
+    }
+    return _assestsTokenLabel;
 }
 
 - (UILabel *)assestsBalanceLable{
@@ -102,23 +112,30 @@
         [self.contentView addSubview:self.assestsImg];
         self.assestsImg.sd_layout.leftSpaceToView(self.contentView, 16).centerYEqualToView(self.contentView).widthIs(40).heightEqualToWidth();
         
-        [self.contentView addSubview:self.lable_24h];
-        self.lable_24h.sd_layout.topSpaceToView(self.contentView, topSpace).rightSpaceToView(self.contentView, MARGIN_20).widthIs(30).heightIs(labelHeight);
-        
-        [self.contentView addSubview:self.assestsPriceChangeLabel];
-      self.assestsPriceChangeLabel.sd_layout.topSpaceToView(self.contentView, topSpace).rightSpaceToView(self.lable_24h, 8).widthIs(100).heightIs(labelHeight);
-        
-        [self.contentView addSubview:self.lable_nowPrice];
-        self.lable_nowPrice.sd_layout.rightSpaceToView(self.contentView, MARGIN_20).topSpaceToView(_lable_24h, 8).widthIs(30).heightIs(labelHeight);
+//        [self.contentView addSubview:self.lable_24h];
+//        self.lable_24h.sd_layout.topSpaceToView(self.contentView, topSpace).rightSpaceToView(self.contentView, MARGIN_20).widthIs(30).heightIs(labelHeight);
+//
+//        [self.contentView addSubview:self.assestsPriceChangeLabel];
+//      self.assestsPriceChangeLabel.sd_layout.topSpaceToView(self.contentView, topSpace).rightSpaceToView(self.lable_24h, 8).widthIs(100).heightIs(labelHeight);
+//
+//        [self.contentView addSubview:self.lable_nowPrice];
+//        self.lable_nowPrice.sd_layout.rightSpaceToView(self.contentView, MARGIN_20).topSpaceToView(_lable_24h, 8).widthIs(30).heightIs(labelHeight);
+//
+//        [self.contentView addSubview:self.nowPriceLabel];
+//        self.nowPriceLabel.sd_layout.rightSpaceToView(self.lable_nowPrice, 8).centerYEqualToView(_lable_nowPrice).widthIs(200).heightIs(labelHeight);
 
-        [self.contentView addSubview:self.nowPriceLabel];
-        self.nowPriceLabel.sd_layout.rightSpaceToView(self.lable_nowPrice, 8).centerYEqualToView(_lable_nowPrice).widthIs(200).heightIs(labelHeight);
-
+//        [self.contentView addSubview:self.assestsBalanceLable];
+//        self.assestsBalanceLable.sd_layout.leftSpaceToView(_assestsImg, MARGIN_15).topSpaceToView(self.contentView, topSpace).rightSpaceToView(_assestsPriceChangeLabel, 8).heightIs(labelHeight);
+        
+        [self.contentView addSubview:self.assestsTokenLabel];
+        self.assestsTokenLabel.sd_layout.leftSpaceToView(_assestsImg, MARGIN_15).centerYEqualToView(_assestsImg).widthIs(80).heightIs(labelHeight);
+        
         [self.contentView addSubview:self.assestsBalanceLable];
-        self.assestsBalanceLable.sd_layout.leftSpaceToView(_assestsImg, MARGIN_15).topSpaceToView(self.contentView, topSpace).rightSpaceToView(_assestsPriceChangeLabel, 8).heightIs(labelHeight);
+        self.assestsBalanceLable.sd_layout.rightSpaceToView(self.contentView, MARGIN_20).centerYEqualToView(_assestsImg).heightIs(labelHeight);
+        [self.assestsBalanceLable setSingleLineAutoResizeWithMaxWidth:SCREEN_WIDTH/2];
 
-        [self.contentView addSubview:self.assestsBalanceCnyLabel];
-        self.assestsBalanceCnyLabel.sd_layout.leftSpaceToView(_assestsImg, MARGIN_15).centerYEqualToView(_lable_nowPrice).rightSpaceToView(_assestsPriceChangeLabel, 8).heightIs(labelHeight);
+//        [self.contentView addSubview:self.assestsBalanceCnyLabel];
+//        self.assestsBalanceCnyLabel.sd_layout.leftSpaceToView(_assestsImg, MARGIN_15).centerYEqualToView(_lable_nowPrice).rightSpaceToView(_assestsPriceChangeLabel, 8).heightIs(labelHeight);
         
         
         [self.contentView addSubview:self.bottomLineView];
@@ -131,8 +148,11 @@
 -(void)setModel:(TokenInfo *)model{
     self.assestsImg.image = [UIImage imageNamed:model.iconUrl];
     [self.assestsImg sd_setImageWithURL:String_To_URL(model.iconUrl) placeholderImage:[UIImage imageNamed:@"account_default_blue"]];
+    
+    self.assestsTokenLabel.text = [NSString stringWithFormat:@"%@",VALIDATE_STRING(model.token_symbol)];
 
-    self.assestsBalanceLable.text = [NSString stringWithFormat:@"%@ %@", VALIDATE_STRING([NumberFormatter displayStringFromNumber:[NSNumber numberWithDouble:model.balance.doubleValue ]]), VALIDATE_STRING(model.token_symbol)];
+//    self.assestsBalanceLable.text = [NSString stringWithFormat:@"%@ %@", VALIDATE_STRING([NumberFormatter displayStringFromNumber:[NSNumber numberWithDouble:model.balance.doubleValue ]]), VALIDATE_STRING(model.token_symbol)];
+        self.assestsBalanceLable.text = [NSString stringWithFormat:@"%@", VALIDATE_STRING([NumberFormatter displayStringFromNumber:[NSNumber numberWithDouble:model.balance.doubleValue ]])];
     
     self.assestsBalanceCnyLabel.text = [NSString stringWithFormat:@"≈%@ CNY", [NumberFormatter displayStringFromNumber:[NSNumber numberWithDouble:model.balance_cny.doubleValue ]]];
     

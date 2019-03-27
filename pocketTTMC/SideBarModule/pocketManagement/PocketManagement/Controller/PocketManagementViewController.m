@@ -43,7 +43,7 @@
     if (!_headerView) {
         _headerView = [[[NSBundle mainBundle] loadNibNamed:@"PocketManagementHeaderView" owner:nil options:nil] firstObject];
         _headerView.delegate = self;
-        _headerView.frame = CGRectMake(0, NAVIGATIONBAR_HEIGHT, SCREEN_WIDTH, 195);
+        _headerView.frame = CGRectMake(0, NAVIGATIONBAR_HEIGHT, SCREEN_WIDTH, 160);
     }
     return _headerView;
 }

@@ -34,7 +34,7 @@
 - (BaseLabel *)titleLabel{
     if (!_titleLabel) {
         _titleLabel = [[BaseLabel alloc] init];
-        _titleLabel.font = [UIFont systemFontOfSize:15];
+        _titleLabel.font = [UIFont systemFontOfSize:18];
     }
     return _titleLabel;
 }
@@ -111,7 +111,7 @@
         self.avatarImg.sd_layout.leftSpaceToView(self.contentView, 8).topSpaceToView(self.contentView, 12).widthIs(38).heightEqualToWidth();
         
         [self.contentView addSubview:self.titleLabel];
-        self.titleLabel.sd_layout.leftSpaceToView(_avatarImg, MARGIN_10).topSpaceToView(self.contentView, 14).heightIs(18);
+        self.titleLabel.sd_layout.leftSpaceToView(_avatarImg, MARGIN_10).topSpaceToView(self.contentView, 22).heightIs(18);
         [self.titleLabel setSingleLineAutoResizeWithMaxWidth:SCREEN_WIDTH/2];
         
         [self.contentView addSubview:self.mainAccountImg];
@@ -122,8 +122,9 @@
         [self.contentView addSubview:self.rightIconImageView];
         self.rightIconImageView.sd_layout.rightSpaceToView(self.contentView, MARGIN_20).topSpaceToView(self.contentView, MARGIN_20).widthIs(16).heightIs(16);
         
-        [self.contentView addSubview:self.detailLabel];
-        self.detailLabel.sd_layout.leftSpaceToView(_avatarImg, MARGIN_10).topSpaceToView(self.titleLabel, 6).heightIs(15).widthIs(200);
+        // TTMC permision do not show
+//        [self.contentView addSubview:self.detailLabel];
+//        self.detailLabel.sd_layout.leftSpaceToView(_avatarImg, MARGIN_10).topSpaceToView(self.titleLabel, 6).heightIs(15).widthIs(200);
         
         
         [self.contentView addSubview:self.line1];
