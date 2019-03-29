@@ -88,5 +88,5 @@
 //#define REQUEST_TOKENPAY_BASEURL @"http://192.178.1.64:3030/tokenpay"
 //
 //#define REQUEST_ASSESTLOCK_RECORDS @"https://192.178.1.64:3033"
-//
-//#endif /* RequestUrlConstant_h */
+
+#endif /* RequestUrlConstant_h */
