@@ -42,7 +42,7 @@
 
 
 - (IBAction)officialSiteBtnClick:(UIButton *)sender {
-    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: IsStrEmpty(self.officialWebsite) ?  @"http://www.ttmc.net" :  self.officialWebsite]];
+    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: IsStrEmpty(self.officialWebsite) ?  @"http://www.ttmc.io" :  self.officialWebsite]];
 }
 
 

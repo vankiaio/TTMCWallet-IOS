@@ -11,7 +11,7 @@
 #import "BindSocialPlatformViewController.h"
 #import "UnBindSocialPlatformViewController.h"
 #import "SliderVerifyView.h"
-#import "LoginEntranceViewController.h"
+#import "BBLoginViewController.h"
 #import "AppDelegate.h"
 #import "PersonalSettingService.h"
 #import "RSKImageCropper.h"
@@ -360,7 +360,7 @@
         [view removeFromSuperview];
         
     }
-    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:[[LoginEntranceViewController alloc] init]];
+    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:[[BBLoginViewController alloc] init]];
     [((AppDelegate *)[[UIApplication sharedApplication] delegate]).window setRootViewController: navi];
     
 }

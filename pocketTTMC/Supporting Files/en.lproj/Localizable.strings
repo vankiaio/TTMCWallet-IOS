@@ -59,6 +59,8 @@
 "解锁时间"="Unlock Time";
 "锁定数量"="Locked Amount";
 "锁仓总额"="Total Locked Amount";
+"无锁仓记录"="No lock record";
+
 /*
  AssestsMainViewController.m
  */
@@ -670,6 +672,7 @@
 "支付费用创建新TTMC账号"="Buy TTMC account with alipay or wechat.";
 "填写注册码免费创建TTMC账号"="VIP only!";
 "创建自定义名称的TTMC账号"="Create an TTMC account";
+"选择账号添加方式"="Choose how to add an account";
 
 /*
  PayRegistAccountViewController.m

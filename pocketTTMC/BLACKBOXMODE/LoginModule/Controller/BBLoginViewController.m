@@ -92,6 +92,7 @@
         CGFloat cellHeight = 50.5;
         
         _chooseWalletBackgroundView.frame = CGRectMake(0, HEADERVIEW_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT-HEADERVIEW_HEIGHT);
+        _chooseWalletBackgroundView.backgroundColor = HEXCOLOR(0xFFFFFF);
         UILabel *label = [[UILabel alloc] init];
         label.textColor = HEXCOLOR(0x999999);
         label.text = NSLocalizedString(@"请选择钱包:", nil);
@@ -179,7 +180,7 @@
 
 // BBLoginHeaderViewDelegate
 -(void)changeModeToSocialMode{
-    LoginEntranceViewController *vc = [[LoginEntranceViewController alloc] init];
+    BBLoginViewController *vc = [[BBLoginViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -204,10 +205,10 @@
     }
     
     
-    if (IsStrEmpty(self.createWalletView.walletNameTF.text)) {
-        [TOASTVIEW showWithText:NSLocalizedString(@"钱包名称不能为空!", nil)];
-        return;
-    }
+//    if (IsStrEmpty(self.createWalletView.walletNameTF.text)) {
+//        [TOASTVIEW showWithText:NSLocalizedString(@"钱包名称不能为空!", nil)];
+//        return;
+//    }
     if (IsStrEmpty(self.createWalletView.passwordTF.text)) {
         [TOASTVIEW showWithText:NSLocalizedString(@"密码不能为空!", nil)];
         return;
@@ -217,16 +218,17 @@
         return;
     }
     // 查重该钱包名称已在您本地存在,请更换尝试~
-    NSArray *localWalletsArr = [[WalletTableManager walletTable] selectAllLocalWallet];
-    for (Wallet *model in localWalletsArr) {
-        if ([model.wallet_name isEqualToString:self.createWalletView.walletNameTF.text]) {
-            [TOASTVIEW showWithText:NSLocalizedString(@"该钱包名称已在您本地存在,请更换尝试~!", nil)];
-            return;
-        }
-    }
+//    NSArray *localWalletsArr = [[WalletTableManager walletTable] selectAllLocalWallet];
+//    for (Wallet *model in localWalletsArr) {
+//        if ([model.wallet_name isEqualToString:self.createWalletView.walletNameTF.text]) {
+//            [TOASTVIEW showWithText:NSLocalizedString(@"该钱包名称已在您本地存在,请更换尝试~!", nil)];
+//            return;
+//        }
+//    }
     // 如果本地没有钱包
     Wallet *model = [[Wallet alloc] init];
-    model.wallet_name = self.createWalletView.walletNameTF.text;
+//    model.wallet_name = self.createWalletView.walletNameTF.text;
+    model.wallet_name = @"TTMC";
     
     model.wallet_shapwd = [WalletUtil generate_wallet_shapwd_withPassword:self.createWalletView.passwordTF.text];
     model.wallet_uid = [model.wallet_name sha256];

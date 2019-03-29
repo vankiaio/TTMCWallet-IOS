@@ -87,7 +87,7 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 90+5+5;
+    return 90+5+5+20;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -106,8 +106,15 @@
         ImportAccountWithoutAccountNameBaseViewController *vc = [[ImportAccountWithoutAccountNameBaseViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }else if ([model.optionName isEqualToString:NSLocalizedString(@"创建账号", nil)]){
-        PayRegistAccountViewController *vc = [[PayRegistAccountViewController alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
+//        PayRegistAccountViewController *vc = [[PayRegistAccountViewController alloc] init];
+//        [self.navigationController pushViewController:vc animated:YES];
+        //TTMC for free create
+        if (self.checkWhetherHasFreeQuotaResult.data == YES) {
+            CreateAccountViewController *vc = [[CreateAccountViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }else{
+            [TOASTVIEW showWithText:self.checkWhetherHasFreeQuotaResult.message];
+        }
     }else if ([model.optionName isEqualToString:NSLocalizedString(@"我是VIP", nil)]){
         VipRegistAccountViewController *vc = [[VipRegistAccountViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
@@ -122,18 +129,19 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return 150;
+    return 0;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
-    UIButton *btn = [[UIButton alloc] init];
-    [btn setTitle:NSLocalizedString(@"跳过添加", nil) forState:(UIControlStateNormal)];
-    [btn setTitleColor:HEXCOLOR(0x999999) forState:UIControlStateNormal];
-    btn.font = [UIFont systemFontOfSize:13];
-    [btn setBackgroundColor:[UIColor clearColor]];
-    [btn addTarget:self action:@selector(footerBtnDidClick) forControlEvents:(UIControlEventTouchUpInside)];
-    btn.frame = CGRectMake(0, MARGIN_10, SCREEN_WIDTH, 40);
-    return btn;
+//    UIButton *btn = [[UIButton alloc] init];
+//    [btn setTitle:NSLocalizedString(@"跳过添加", nil) forState:(UIControlStateNormal)];
+//    [btn setTitleColor:HEXCOLOR(0x999999) forState:UIControlStateNormal];
+//    btn.font = [UIFont systemFontOfSize:13];
+//    [btn setBackgroundColor:[UIColor clearColor]];
+//    [btn addTarget:self action:@selector(footerBtnDidClick) forControlEvents:(UIControlEventTouchUpInside)];
+//    btn.frame = CGRectMake(0, MARGIN_10, SCREEN_WIDTH, 40);
+//    return btn;
+    return nil;
 }
 
 - (void)footerBtnDidClick{

@@ -211,7 +211,7 @@
                         }
                     }
                 }else{
-                    [TOASTVIEW showWithText:@"网络错误"];
+                    [TOASTVIEW showWithText:NSLocalizedString(@"网络错误", nil)];
                 }
             }];
     }];
@@ -272,7 +272,7 @@
                         }
                     }
                 }else{
-                    [TOASTVIEW showWithText:@"网络错误"];
+                    [TOASTVIEW showWithText:NSLocalizedString(@"网络错误", nil)];
                 }
             }];
     }];

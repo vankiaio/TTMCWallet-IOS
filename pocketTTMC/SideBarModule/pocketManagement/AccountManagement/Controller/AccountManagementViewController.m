@@ -15,7 +15,7 @@
 #import "SliderVerifyView.h"
 #import "AskQuestionTipView.h"
 #import "AppDelegate.h"
-#import "LoginEntranceViewController.h"
+#import "BBLoginViewController.h"
 #import "AccountManagementService.h"
 #import "TTMCResourceManageViewController.h"
 #import "UnStakeTTMCViewController.h"
@@ -405,7 +405,7 @@
         [view removeFromSuperview];
         
     }
-    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:[[LoginEntranceViewController alloc] init]];
+    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:[[BBLoginViewController alloc] init]];
     [((AppDelegate *)[[UIApplication sharedApplication] delegate]).window setRootViewController: navi];
 }
 

@@ -29,7 +29,7 @@
 //ttmc 账号名验证
 + (BOOL) validateTtmcAccountName:(NSString *)accountName{
     // 6位数字
-    NSString *verifyAccountNameRegex = @"^[1-5a-z]{12}$";
+    NSString *verifyAccountNameRegex = @"^[1-5a-z]{5,12}$";
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",verifyAccountNameRegex];
     return [predicate evaluateWithObject:accountName];
 }

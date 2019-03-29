@@ -189,14 +189,14 @@
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
     if (section == 3) {
         
-        UIButton *btn = [[UIButton alloc] init];
-        [btn setTitle:NSLocalizedString(@"到浏览器中查看详情", nil) forState:(UIControlStateNormal)];
-        [btn setTitleColor:HEXCOLOR(0x668FFF) forState:UIControlStateNormal];
-        btn.font = [UIFont systemFontOfSize:12];
-        [btn setBackgroundColor:[UIColor clearColor]];
-        [btn addTarget:self action:@selector(footerBtnDidClick) forControlEvents:(UIControlEventTouchUpInside)];
-        btn.frame = CGRectMake(0, MARGIN_10, SCREEN_WIDTH, 40);
-        return btn;
+//        UIButton *btn = [[UIButton alloc] init];
+//        [btn setTitle:NSLocalizedString(@"到浏览器中查看详情", nil) forState:(UIControlStateNormal)];
+//        [btn setTitleColor:HEXCOLOR(0x668FFF) forState:UIControlStateNormal];
+//        btn.font = [UIFont systemFontOfSize:12];
+//        [btn setBackgroundColor:[UIColor clearColor]];
+//        [btn addTarget:self action:@selector(footerBtnDidClick) forControlEvents:(UIControlEventTouchUpInside)];
+//        btn.frame = CGRectMake(0, MARGIN_10, SCREEN_WIDTH, 40);
+//        return btn;
     }
     return nil;
 }
@@ -204,7 +204,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     if (section == 3) {
-        return 40;
+        return 0;
     }
     return 0;
 }

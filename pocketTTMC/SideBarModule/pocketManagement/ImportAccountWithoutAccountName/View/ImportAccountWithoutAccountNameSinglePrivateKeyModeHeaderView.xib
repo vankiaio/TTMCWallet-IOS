@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -32,10 +32,10 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="always" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Beg-LB-Fpj">
-                    <rect key="frame" x="20" y="65.5" width="335" height="61"/>
+                    <rect key="frame" x="20" y="65.5" width="335" height="80"/>
                     <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="61" id="OXV-ol-NDx"/>
+                        <constraint firstAttribute="height" constant="80" id="OXV-ol-NDx"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -46,7 +46,7 @@
                     </userDefinedRuntimeAttributes>
                 </textView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJm-K1-ztJ" customClass="BaseConfirmButton">
-                    <rect key="frame" x="20" y="592" width="335" height="45"/>
+                    <rect key="frame" x="20" y="562" width="335" height="45"/>
                     <color key="backgroundColor" red="0.96620899439999997" green="0.50225113720000003" blue="0.34368016070000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="8no-7M-3SG"/>
@@ -78,7 +78,7 @@
                 <constraint firstAttribute="trailing" secondItem="K6A-qS-uQn" secondAttribute="trailing" constant="20" id="ZB7-dD-ScF"/>
                 <constraint firstItem="K6A-qS-uQn" firstAttribute="leading" secondItem="GLg-ns-xhB" secondAttribute="leading" constant="20" id="aAV-C8-b4Z"/>
                 <constraint firstItem="Beg-LB-Fpj" firstAttribute="leading" secondItem="GLg-ns-xhB" secondAttribute="leading" constant="20" id="aDb-Gl-Iam"/>
-                <constraint firstAttribute="bottom" secondItem="ZJm-K1-ztJ" secondAttribute="bottom" constant="30" id="uTU-70-8bK"/>
+                <constraint firstAttribute="bottom" secondItem="ZJm-K1-ztJ" secondAttribute="bottom" constant="60" id="uTU-70-8bK"/>
             </constraints>
             <connections>
                 <outlet property="confirmBtn" destination="ZJm-K1-ztJ" id="i8U-DO-nKs"/>

@@ -79,7 +79,8 @@
 - (UILabel *)titleLabel{
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
-        _titleLabel.font = [UIFont boldSystemFontOfSize:15];
+        _titleLabel.font = [UIFont boldSystemFontOfSize:18];
+        _titleLabel.textColor = HEXCOLOR(0x999999);
         _titleLabel.text = NSLocalizedString(@"选择账号添加方式", nil);
         _titleLabel.backgroundColor= [UIColor clearColor];
     }
@@ -93,7 +94,7 @@
         self.lee_theme.LeeConfigBackgroundColor(@"baseAddAccount_background_color");
         
         [self addSubview:self.titleLabel];
-        _titleLabel.frame = CGRectMake(MARGIN_20, 100, 200, 20);
+        _titleLabel.frame = CGRectMake(MARGIN_20, 100, 400, 20);
         
         [self addSubview:self.mainTableView];
         self.mainTableView.frame = CGRectMake(0, 150, SCREEN_WIDTH, SCREEN_HEIGHT);
@@ -118,7 +119,7 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 90+5+5;
+    return 90+5+5+20;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -169,7 +170,7 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return 150;
+    return 0;
 }
 
 

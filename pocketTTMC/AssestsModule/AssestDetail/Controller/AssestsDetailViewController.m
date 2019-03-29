@@ -255,7 +255,7 @@
         self.headerView.fluctuateLabel.attributedText = attrString;
     }
     if (self.model.asset_market_cap_cny.integerValue == 0 ) {
-        self.headerView.totalLabel.text = NSLocalizedString(@"我们正在努力寻找它的价格...", nil);
+        self.headerView.totalLabel.text = NSLocalizedString(@"无锁仓记录", nil);
     }else{
         self.headerView.totalLabel.text = [NSString stringWithFormat:@"%@:%@ TTMC", NSLocalizedString(@"锁仓", nil),self.model.locked_amount];
     }

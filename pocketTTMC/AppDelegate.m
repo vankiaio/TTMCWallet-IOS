@@ -64,7 +64,7 @@ void uncaughtExceptionHandler(NSException*exception){
         
         UIViewController *vc;
         if (LEETHEME_CURRENTTHEME_IS_SOCAIL_MODE) {
-            vc = [[LoginEntranceViewController alloc] init];
+            vc = [[BBLoginViewController alloc] init];
         }else if (LEETHEME_CURRENTTHEME_IS_BLACKBOX_MODE){
             vc = [[BBLoginViewController alloc] init];
         }
