@@ -44,4 +44,10 @@
     }
 }
 
+- (void)assetsLocksBtn:(UIButton *)sender {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(assetsLocksBtnDidClick:)]) {
+        [self.delegate assetsLocksBtnDidClick:sender];
+    }
+}
+
 @end

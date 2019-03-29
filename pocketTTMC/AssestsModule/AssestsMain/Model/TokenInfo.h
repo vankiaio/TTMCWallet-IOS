@@ -35,6 +35,11 @@
 @property(nonatomic, copy) NSString *balance;
 
 /**
+ balance
+ */
+@property(nonatomic, copy) NSString *locked_amount;
+
+/**
  balance_usd
  */
 @property(nonatomic, copy) NSString *balance_usd;

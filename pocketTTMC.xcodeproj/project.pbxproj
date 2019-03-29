@@ -1311,6 +1311,15 @@
 		24FB2CA820DBF86800AC73A5 /* BandwidthManageHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FB2CA720DBF86800AC73A5 /* BandwidthManageHeaderView.m */; };
 		24FB2CAE20DBF99700AC73A5 /* BandwidthManageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FB2CAC20DBF99700AC73A5 /* BandwidthManageTableViewCell.m */; };
 		24FB2CB220DBF9CE00AC73A5 /* BandwidthManageCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FB2CB120DBF9CE00AC73A5 /* BandwidthManageCellModel.m */; };
+		6E3DE991224CC0D600D9C729 /* GetAssestLockRecordsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DE97D224CC0D600D9C729 /* GetAssestLockRecordsRequest.m */; };
+		6E3DE992224CC0D600D9C729 /* AssestLockRecordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DE980224CC0D600D9C729 /* AssestLockRecordsViewController.m */; };
+		6E3DE993224CC0D600D9C729 /* AssestLocksResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DE982224CC0D600D9C729 /* AssestLocksResult.m */; };
+		6E3DE994224CC0D600D9C729 /* AssestLockRecordsResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DE986224CC0D600D9C729 /* AssestLockRecordsResult.m */; };
+		6E3DE995224CC0D600D9C729 /* AssestLockRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DE987224CC0D600D9C729 /* AssestLockRecord.m */; };
+		6E3DE996224CC0D600D9C729 /* AssestLockRecordsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E3DE989224CC0D600D9C729 /* AssestLockRecordsHeaderView.xib */; };
+		6E3DE997224CC0D600D9C729 /* AssestLockRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DE98A224CC0D600D9C729 /* AssestLockRecordTableViewCell.m */; };
+		6E3DE998224CC0D600D9C729 /* AssestLockRecordsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DE98C224CC0D600D9C729 /* AssestLockRecordsHeaderView.m */; };
+		6E3DE999224CC0D600D9C729 /* AssestLockRecordsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DE990224CC0D600D9C729 /* AssestLockRecordsService.m */; };
 		913F529E95F17E3A43092DAE /* libPods-pocketTTMC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B5C5F1FD55B2E025CB8582 /* libPods-pocketTTMC.a */; };
 /* End PBXBuildFile section */
 
@@ -3597,6 +3606,23 @@
 		24FB2CB820DBFE7200AC73A5 /* PageSegmentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageSegmentView.m; sourceTree = "<group>"; };
 		24FB2CB920DBFE7200AC73A5 /* BodyScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BodyScrollView.h; sourceTree = "<group>"; };
 		24FB2CBA20DBFE7200AC73A5 /* UIViewAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
+		6E3DE97C224CC0D600D9C729 /* GetAssestLockRecordsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetAssestLockRecordsRequest.h; sourceTree = "<group>"; };
+		6E3DE97D224CC0D600D9C729 /* GetAssestLockRecordsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetAssestLockRecordsRequest.m; sourceTree = "<group>"; };
+		6E3DE97F224CC0D600D9C729 /* AssestLockRecordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssestLockRecordsViewController.h; sourceTree = "<group>"; };
+		6E3DE980224CC0D600D9C729 /* AssestLockRecordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssestLockRecordsViewController.m; sourceTree = "<group>"; };
+		6E3DE982224CC0D600D9C729 /* AssestLocksResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssestLocksResult.m; sourceTree = "<group>"; };
+		6E3DE983224CC0D600D9C729 /* AssestLockRecordsResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssestLockRecordsResult.h; sourceTree = "<group>"; };
+		6E3DE984224CC0D600D9C729 /* AssestLockRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssestLockRecord.h; sourceTree = "<group>"; };
+		6E3DE985224CC0D600D9C729 /* AssestLocksResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssestLocksResult.h; sourceTree = "<group>"; };
+		6E3DE986224CC0D600D9C729 /* AssestLockRecordsResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssestLockRecordsResult.m; sourceTree = "<group>"; };
+		6E3DE987224CC0D600D9C729 /* AssestLockRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssestLockRecord.m; sourceTree = "<group>"; };
+		6E3DE989224CC0D600D9C729 /* AssestLockRecordsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AssestLockRecordsHeaderView.xib; sourceTree = "<group>"; };
+		6E3DE98A224CC0D600D9C729 /* AssestLockRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssestLockRecordTableViewCell.m; sourceTree = "<group>"; };
+		6E3DE98B224CC0D600D9C729 /* AssestLockRecordsHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssestLockRecordsHeaderView.h; sourceTree = "<group>"; };
+		6E3DE98C224CC0D600D9C729 /* AssestLockRecordsHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssestLockRecordsHeaderView.m; sourceTree = "<group>"; };
+		6E3DE98D224CC0D600D9C729 /* AssestLockRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssestLockRecordTableViewCell.h; sourceTree = "<group>"; };
+		6E3DE98F224CC0D600D9C729 /* AssestLockRecordsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssestLockRecordsService.h; sourceTree = "<group>"; };
+		6E3DE990224CC0D600D9C729 /* AssestLockRecordsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssestLockRecordsService.m; sourceTree = "<group>"; };
 		AFAE409D652850E019785CE8 /* Pods-pocketTTMC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pocketTTMC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pocketTTMC/Pods-pocketTTMC.debug.xcconfig"; sourceTree = "<group>"; };
 		D9B5C5F1FD55B2E025CB8582 /* libPods-pocketTTMC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pocketTTMC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9EE9F0D161AD0B85DB36F92 /* Pods-pocketTTMC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pocketTTMC.release.xcconfig"; path = "Pods/Target Support Files/Pods-pocketTTMC/Pods-pocketTTMC.release.xcconfig"; sourceTree = "<group>"; };
@@ -8859,6 +8885,7 @@
 		18E72E021FCC0EBD00D09CA3 /* AssestsModule */ = {
 			isa = PBXGroup;
 			children = (
+				6E3DE97A224CC0D600D9C729 /* AssetLock */,
 				18E72E051FCC0FDD00D09CA3 /* AssestsMain */,
 				181130B31FCD0E9B00BEA0D9 /* AssestDetail */,
 				18C6228D1FD637DE0043447F /* Transfer */,
@@ -10071,6 +10098,70 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6E3DE97A224CC0D600D9C729 /* AssetLock */ = {
+			isa = PBXGroup;
+			children = (
+				6E3DE97B224CC0D600D9C729 /* Networking */,
+				6E3DE97E224CC0D600D9C729 /* Controller */,
+				6E3DE981224CC0D600D9C729 /* Model */,
+				6E3DE988224CC0D600D9C729 /* View */,
+				6E3DE98E224CC0D600D9C729 /* Service */,
+			);
+			path = AssetLock;
+			sourceTree = "<group>";
+		};
+		6E3DE97B224CC0D600D9C729 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6E3DE97C224CC0D600D9C729 /* GetAssestLockRecordsRequest.h */,
+				6E3DE97D224CC0D600D9C729 /* GetAssestLockRecordsRequest.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		6E3DE97E224CC0D600D9C729 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6E3DE97F224CC0D600D9C729 /* AssestLockRecordsViewController.h */,
+				6E3DE980224CC0D600D9C729 /* AssestLockRecordsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6E3DE981224CC0D600D9C729 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6E3DE984224CC0D600D9C729 /* AssestLockRecord.h */,
+				6E3DE987224CC0D600D9C729 /* AssestLockRecord.m */,
+				6E3DE983224CC0D600D9C729 /* AssestLockRecordsResult.h */,
+				6E3DE986224CC0D600D9C729 /* AssestLockRecordsResult.m */,
+				6E3DE985224CC0D600D9C729 /* AssestLocksResult.h */,
+				6E3DE982224CC0D600D9C729 /* AssestLocksResult.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6E3DE988224CC0D600D9C729 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6E3DE989224CC0D600D9C729 /* AssestLockRecordsHeaderView.xib */,
+				6E3DE98A224CC0D600D9C729 /* AssestLockRecordTableViewCell.m */,
+				6E3DE98B224CC0D600D9C729 /* AssestLockRecordsHeaderView.h */,
+				6E3DE98C224CC0D600D9C729 /* AssestLockRecordsHeaderView.m */,
+				6E3DE98D224CC0D600D9C729 /* AssestLockRecordTableViewCell.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6E3DE98E224CC0D600D9C729 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6E3DE98F224CC0D600D9C729 /* AssestLockRecordsService.h */,
+				6E3DE990224CC0D600D9C729 /* AssestLockRecordsService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -10571,6 +10662,7 @@
 				18041E82213D142100A8D870 /* redpacket_icon@2x.png in Resources */,
 				18BE5EAE21819FA2001B4610 /* rescue-icon@3x.png in Resources */,
 				185D184D1FE760D10021AD18 /* QRCodeBackground@3x.png in Resources */,
+				6E3DE996224CC0D600D9C729 /* AssestLockRecordsHeaderView.xib in Resources */,
 				186F6A3220F4970300FFF881 /* PersonalSettingDetailHeaderView.xib in Resources */,
 				1872F13C202D6FD6005B5915 /* back_white@3x.png in Resources */,
 				18C6C15821A690AD00250887 /* SGQRCode.bundle in Resources */,
@@ -10772,6 +10864,7 @@
 				186857211FE11B74002A683A /* ConfirmPasswordView.m in Sources */,
 				1832CC50200778E900C055B6 /* ImportPocketViewController.m in Sources */,
 				1841420C2020700800A789ED /* Enterprise.m in Sources */,
+				6E3DE998224CC0D600D9C729 /* AssestLockRecordsHeaderView.m in Sources */,
 				189CEC7C20CF60CA00F81AD8 /* BPCandidateDetailResult.m in Sources */,
 				189E3EC7201C788E0022AF19 /* ApplicationModuleHeaderRequest.m in Sources */,
 				1814140F1FCFA2BA00334C60 /* SVProgressHUD.m in Sources */,
@@ -10928,11 +11021,13 @@
 				18E72E1E1FCC115700D09CA3 /* RichListMainViewController.m in Sources */,
 				183BB21F2123B3D400FA85AF /* ExcuteActionsContentTableViewCell.m in Sources */,
 				1811306D1FCD020A00BEA0D9 /* UIImageView+AFNetworking.m in Sources */,
+				6E3DE991224CC0D600D9C729 /* GetAssestLockRecordsRequest.m in Sources */,
 				18FA76CA20623C6D00545E73 /* TtmcPrivateKey.m in Sources */,
 				1837D76C20E3C93C005A9E98 /* WalletUtil.m in Sources */,
 				18FA76DA20623C8A00545E73 /* tommath.c in Sources */,
 				1886079B1FCC012F00B00EE7 /* NSDate+ExFoundation.m in Sources */,
 				18DBBB17206523A00050EE20 /* PGDatePicker+Year.m in Sources */,
+				6E3DE994224CC0D600D9C729 /* AssestLockRecordsResult.m in Sources */,
 				183FF9131FF382C4006C25F1 /* ApplicationsResult.m in Sources */,
 				18F576CB212BE9F900AE54E9 /* TransferRecordsTableViewCell.m in Sources */,
 				181130161FCD01B800BEA0D9 /* UIImage+ForceDecode.m in Sources */,
@@ -10989,6 +11084,7 @@
 				181275DB20B6DDA3005EDD91 /* UIColor+Util.m in Sources */,
 				1811301B1FCD01B800BEA0D9 /* UIImageView+WebCache.m in Sources */,
 				1856A4DE2008887200D62FEB /* MJRefreshAutoFooter.m in Sources */,
+				6E3DE992224CC0D600D9C729 /* AssestLockRecordsViewController.m in Sources */,
 				18112F711FCD016000BEA0D9 /* IQPreviousNextView.m in Sources */,
 				1856A4E72008887200D62FEB /* MJRefreshBackNormalFooter.m in Sources */,
 				188DECF620A97F4E00ACD2A3 /* BBLoginHeaderView.m in Sources */,
@@ -11008,6 +11104,7 @@
 				18F576DB212C0D5F00AE54E9 /* TransferDetailsTableViewCell.m in Sources */,
 				181130151FCD01B800BEA0D9 /* UIButton+WebCache.m in Sources */,
 				186050EF2027FEE700C87DDF /* QuestionListDetailResult.m in Sources */,
+				6E3DE995224CC0D600D9C729 /* AssestLockRecord.m in Sources */,
 				188607751FCBF73B00B00EE7 /* BaseTabBarController.m in Sources */,
 				186BDBC82150F8E0001190A7 /* ScatterMainService.m in Sources */,
 				18886826216DCECC008E4491 /* SignatureForMessageModel.m in Sources */,
@@ -11084,6 +11181,7 @@
 				181130171FCD01B800BEA0D9 /* UIImage+GIF.m in Sources */,
 				184D61771FD4F36300EA26B1 /* NSSet+HYBUnicodeReadable.m in Sources */,
 				1841426E2020B11000A789ED /* GetEnterpriseDetailRequest.m in Sources */,
+				6E3DE999224CC0D600D9C729 /* AssestLockRecordsService.m in Sources */,
 				18F054CC20CBAFB8001B0A29 /* BPCandidateTableViewCell.m in Sources */,
 				18466DA82010A049002E675A /* PYSearchViewController.m in Sources */,
 				18D02F0A214F809E006D2776 /* PSWebSocketBuffer.m in Sources */,
@@ -11179,6 +11277,7 @@
 				18C6C15921A690AD00250887 /* SGQRCodeObtainConfigure.m in Sources */,
 				185DD6CC206CA80400BCFFCF /* MJPropertyType.m in Sources */,
 				244769FC20DD493900B7283C /* PriceModel.m in Sources */,
+				6E3DE997224CC0D600D9C729 /* AssestLockRecordTableViewCell.m in Sources */,
 				18B2912D20898EB00032EE27 /* RedPacketRecord.m in Sources */,
 				186564B32011A2F70044BBC3 /* AuthVerifyCodeRequest.m in Sources */,
 				181130181FCD01B800BEA0D9 /* UIImage+MultiFormat.m in Sources */,
@@ -11222,6 +11321,7 @@
 				1853DE2A20B29F45003DC727 /* TTMCMappingImportAccountHeaderView.m in Sources */,
 				18ED6CD8210FF1880042200F /* PayRegistAccountViewController.m in Sources */,
 				18F576C8212BE58600AE54E9 /* TransferRecordsService.m in Sources */,
+				6E3DE993224CC0D600D9C729 /* AssestLocksResult.m in Sources */,
 				18112F6A1FCD016000BEA0D9 /* IQUIView+Hierarchy.m in Sources */,
 				181130041FCD01B800BEA0D9 /* MKAnnotationView+WebCache.m in Sources */,
 				18CE931C21A2B1DE002F958E /* ImportAccountWithoutAccountNameSinglePrivateKeyModeViewController.m in Sources */,

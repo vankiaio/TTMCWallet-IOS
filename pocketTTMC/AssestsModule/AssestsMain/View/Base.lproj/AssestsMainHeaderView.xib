@@ -15,8 +15,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="290"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="account_default_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="Up3-rw-itT">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="290"/>
+                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account_default_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="Up3-rw-itT">
+                    <rect key="frame" x="0.0" y="10" width="375" height="200"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="200" id="EmN-TJ-CSt"/>
                     </constraints>
@@ -49,8 +49,8 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dg1-hO-Q8x" userLabel="backGroundView">
                     <rect key="frame" x="15" y="165" width="345" height="96"/>
                     <subviews>
-                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HKN-bC-9ni" userLabel="transferBaseView">
-                            <rect key="frame" x="72" y="0.0" width="86.5" height="96"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HKN-bC-9ni" userLabel="transferBaseView">
+                            <rect key="frame" x="70" y="0.0" width="86.5" height="96"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transfer.png" translatesAutoresizingMaskIntoConstraints="NO" id="HIx-b7-CRQ">
                                     <rect key="frame" x="29" y="20" width="28" height="28"/>
@@ -84,8 +84,8 @@
                                 <constraint firstItem="HIx-b7-CRQ" firstAttribute="centerX" secondItem="HKN-bC-9ni" secondAttribute="centerX" id="tcW-P2-SFW"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VpC-oF-BD2" userLabel="recieveBaseView">
-                            <rect key="frame" x="188" y="0.0" width="86" height="96"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VpC-oF-BD2" userLabel="recieveBaseView">
+                            <rect key="frame" x="186.5" y="0.0" width="86" height="96"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recieve.png" translatesAutoresizingMaskIntoConstraints="NO" id="YtB-5H-Hiy">
                                     <rect key="frame" x="29" y="20" width="28" height="28"/>

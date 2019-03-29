@@ -25,6 +25,8 @@
 #import "TransferModel.h"
 #import "TransferRecordsTableViewCell.h"
 #import "TransferDetailsViewController.h"
+#import "AssestLockRecordsViewController.h"
+#import "AssestsDetailHeaderView.h"
 
 @interface AssestsDetailViewController ()< UITableViewDelegate , UITableViewDataSource, NavigationViewDelegate, AssestsDetailHeaderViewDelegate, SocialSharePanelViewDelegate, AssestDetailFooterViewDelegate>
 @property(nonatomic, strong) NavigationView *navView;
@@ -229,7 +231,7 @@
 }
 
 - (void)configHeaderView{
-    self.headerView.amountLabel.text = [NSString stringWithFormat:@"%@:￥%@", NSLocalizedString(@"总额", nil),[NumberFormatter displayStringFromNumber:@( self.model.balance.doubleValue)]];
+    self.headerView.amountLabel.text = [NSString stringWithFormat:@"%@:%@ TTMC", NSLocalizedString(@"总额", nil),[NumberFormatter displayStringFromNumber:@( self.model.balance.doubleValue)]];
     if ([self.model.asset_price_change_in_24h hasPrefix:@"-"]) {
         //        HEXCOLOR(0x1E903C) HEXCOLOR(0xB0B0B0)
         NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString: [NSString stringWithFormat:@"%@%%(%@)", self.model.asset_price_change_in_24h, NSLocalizedString(@"今日", nil)]];
@@ -255,7 +257,7 @@
     if (self.model.asset_market_cap_cny.integerValue == 0 ) {
         self.headerView.totalLabel.text = NSLocalizedString(@"我们正在努力寻找它的价格...", nil);
     }else{
-        self.headerView.totalLabel.text = [NSString stringWithFormat:@"%@(24h)%@CNY", NSLocalizedString(@"额", nil),self.model.asset_market_cap_cny];
+        self.headerView.totalLabel.text = [NSString stringWithFormat:@"%@:%@ TTMC", NSLocalizedString(@"锁仓", nil),self.model.locked_amount];
     }
     self.headerView.accountLabel.text = self.accountName;
     
@@ -389,6 +391,11 @@
             [TOASTVIEW showWithText:NSLocalizedString(@"暂不支持该TOKEN红包", nil)];
         }
     }
+}
+
+- (void)assetsLocksBtnDidClick:(UIButton *)sender{
+    AssestLockRecordsViewController *vc = [[AssestLockRecordsViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark UITableView + 下拉刷新 隐藏时间 + 上拉加载

@@ -18,7 +18,8 @@
 "EBf-P3-pdK.placeholder" = "输入Active私钥";
 
 /* Class = "UILabel"; text = "Active私钥"; ObjectID = "hP7-xV-Xlj"; */
-"hP7-xV-Xlj.text" = "Active私钥";
+//"hP7-xV-Xlj.text" = "Active私钥";
+"hP7-xV-Xlj.text" = "输入私钥";
 
 /* Class = "UILabel"; text = "Owner私钥"; ObjectID = "mpg-Ae-5G4"; */
 "mpg-Ae-5G4.text" = "Owner私钥";

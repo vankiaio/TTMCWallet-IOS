@@ -73,19 +73,21 @@
 //push时隐藏tabbar
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    if (self.viewControllers.count > 0) {
-        if ([viewController conformsToProtocol:@protocol(XYTransitionProtocol)] && [self isNeedTransition:viewController]) {
-            viewController.hidesBottomBarWhenPushed = NO;
-        }else{
-            viewController.hidesBottomBarWhenPushed = YES;
-        }
-        
-    }
+    // TTTMC do not have tabbar
+//    if (self.viewControllers.count > 0) {
+//        if ([viewController conformsToProtocol:@protocol(XYTransitionProtocol)] && [self isNeedTransition:viewController]) {
+//            viewController.hidesBottomBarWhenPushed = NO;
+//        }else{
+//            viewController.hidesBottomBarWhenPushed = YES;
+//        }
+//
+//    }
     [super pushViewController:viewController animated:animated];
-    // 修改tabBra的frame
-    CGRect frame = self.tabBarController.tabBar.frame;
-    frame.origin.y = [UIScreen mainScreen].bounds.size.height - frame.size.height;
-    self.tabBarController.tabBar.frame = frame;
+    // TTTMC do not have tabbar
+//    // 修改tabBra的frame
+//    CGRect frame = self.tabBarController.tabBar.frame;
+//    frame.origin.y = [UIScreen mainScreen].bounds.size.height - frame.size.height;
+//    self.tabBarController.tabBar.frame = frame;
 }
 
 -(void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated{

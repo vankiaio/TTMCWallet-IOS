@@ -31,6 +31,8 @@
     [self setUpTabBar];
     //添加子控制器
     [self setUpAllChildViewController];
+    
+    [self.tabBar setHidden:YES];
 }
 
 
@@ -94,7 +96,7 @@
     AssestsMainViewController *assestsMainVC = [[AssestsMainViewController alloc] init];
     
     [self setupChildViewController:assestsMainVC title: NSLocalizedString(@"资产", nil)imageName:@"assest_unSelect" seleceImageName:@"assest_select" BB_imageName:@"assest_unSelect_BB" BB_seleceImageName:@"assest_Select_BB"];
-    
+
     if (LEETHEME_CURRENTTHEME_IS_SOCAIL_MODE) {
 
         RichListMainViewController *richListVC = [[RichListMainViewController alloc]init];
@@ -102,17 +104,15 @@
 
     }
     
-    
-    NewsMainViewController *newsVC = [[NewsMainViewController alloc] init];
-    [self setupChildViewController:newsVC title:NSLocalizedString(@"新闻", nil) imageName:@"news_unSelect" seleceImageName:@"news_select" BB_imageName:@"news_unSelect_BB" BB_seleceImageName:@"news_select_BB"];
-    
-
-    DiscoverMainViewController *dappVC = [[DiscoverMainViewController alloc]init];
-    [self setupChildViewController:dappVC title:NSLocalizedString(@"发现", nil)imageName:@"application_unSelect" seleceImageName:@"application_select" BB_imageName:@"application_unSelect_BB" BB_seleceImageName:@"application_select_BB"];
+    // TTMC Do not show tabbar
+//    NewsMainViewController *newsVC = [[NewsMainViewController alloc] init];
+//    [self setupChildViewController:newsVC title:NSLocalizedString(@"新闻", nil) imageName:@"news_unSelect" seleceImageName:@"news_select" BB_imageName:@"news_unSelect_BB" BB_seleceImageName:@"news_select_BB"];
+//
+//
+//    DiscoverMainViewController *dappVC = [[DiscoverMainViewController alloc]init];
+//    [self setupChildViewController:dappVC title:NSLocalizedString(@"发现", nil)imageName:@"application_unSelect" seleceImageName:@"application_select" BB_imageName:@"application_unSelect_BB" BB_seleceImageName:@"application_select_BB"];
 
     self.viewControllers = _VCS;
-    // TTMC钱包默认资产，并且不显示TAB
-    [self.tabBar setHidden:YES];
 }
 
 -(void)setupChildViewController:(UIViewController*)controller title:(NSString *)title imageName:(NSString *)imageName seleceImageName:(NSString *)selectImageName BB_imageName:(NSString *)BB_imageName BB_seleceImageName:(NSString *)BB_selectImageName{

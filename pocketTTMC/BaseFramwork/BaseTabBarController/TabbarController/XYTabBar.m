@@ -29,6 +29,8 @@
         [self.superview setNeedsLayout];
         [self.superview layoutSubviews];
     }
+    // TTMC Tabbar do not shown
+    self.hidden = YES;
     
 }
 

@@ -38,9 +38,6 @@
 "24小时涨跌幅"="24h change";
 "总市值"="Total Market Value";
 "今日"="Today";
-"总额"="Total Balance";
-"锁仓"="Locked Balance";
-
 
 /*
  AssestDetailFooterView.m
@@ -53,7 +50,15 @@
 "发起收款"="Receive";
 "发送红包"="Red Packets";
 
-
+/*
+ AssestLockRecordTableViewCell.m
+ */
+"锁仓记录"="Locked Record";
+"总额"="Total Balance";
+"锁仓"="Locked Balance";
+"解锁时间"="Unlock Time";
+"锁定数量"="Locked Amount";
+"锁仓总额"="Total Locked Amount";
 /*
  AssestsMainViewController.m
  */
@@ -664,7 +669,7 @@
 "使用已有的TTMC账号"="Import now!";
 "支付费用创建新TTMC账号"="Buy TTMC account with alipay or wechat.";
 "填写注册码免费创建TTMC账号"="VIP only!";
-"创建自定义名称的TTMC账号"="Create a custom name TTMC account";
+"创建自定义名称的TTMC账号"="Create an TTMC account";
 
 /*
  PayRegistAccountViewController.m

@@ -110,7 +110,9 @@
 
 // ImportAccountHeaderViewDelegate
 - (void)importBtnDidClick:(UIButton *)sender{
-    if (self.headerView.agreeTermBtn.isSelected == YES) {
+    //TTMC only have single key
+//    if (self.headerView.agreeTermBtn.isSelected == YES) {
+    if (YES) {
         if (IsStrEmpty(self.headerView.accountNameTF.text)  ||IsStrEmpty(self.headerView.private_activeKey_tf.text)) {
             [TOASTVIEW showWithText:NSLocalizedString(@"请保证输入信息的完整~", nil)];
             return;
@@ -171,8 +173,9 @@
     private_active_Key_is_validate = [TTMC_Key_Encode validateWif:self.headerView.private_activeKey_tf.text];
     private_owner_Key_is_validate = [TTMC_Key_Encode validateWif:self.headerView.private_ownerKey_TF.text ];
     
-    
-    if (self.headerView.agreeTermBtn.isSelected == YES) {
+    // TTMC have only single key
+//    if (self.headerView.agreeTermBtn.isSelected == YES) {
+    if (YES) {
         if (private_active_Key_is_validate == YES) {
             [self createPublicKeys];
         }else{
@@ -204,7 +207,9 @@
     [self.get_account_permission_service getAccountPermission:^(id service, BOOL isSuccess) {
         if (isSuccess) {
             
-            if (weakSelf.headerView.agreeTermBtn.isSelected == YES) {
+            // TTMC have only single key
+//            if (weakSelf.headerView.agreeTermBtn.isSelected == YES) {
+            if (YES) {
                 if ([self.get_account_permission_service.chainAccountActivePublicKeyArray containsObject:active_public_key_from_local]) {
                     // 本地公钥和网络公钥匹配, 允许进行导入本地操作
                     [weakSelf configAccountInfo];
@@ -230,7 +235,9 @@
     accountInfo.account_img = ACCOUNT_DEFALUT_AVATAR_IMG_URL_STR;
     accountInfo.account_active_public_key = active_public_key_from_local;
     accountInfo.account_active_private_key = [AESCrypt encrypt:self.headerView.private_activeKey_tf.text password:self.loginPasswordView.inputPasswordTF.text];
-    if (self.headerView.agreeTermBtn.isSelected == YES) {
+    // TTMC have only single key
+//    if (self.headerView.agreeTermBtn.isSelected == YES) {
+    if (YES) {
         accountInfo.account_owner_public_key = @"";
         accountInfo.account_owner_private_key = @"";
     }else{

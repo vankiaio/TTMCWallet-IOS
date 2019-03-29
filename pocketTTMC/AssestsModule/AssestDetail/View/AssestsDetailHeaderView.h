@@ -12,6 +12,7 @@
 - (void)transferBtnDidClick;
 - (void)recieveBtnDidClick;
 - (void)redPacketBtnDidClick;
+- (void)assetsLocksBtnDidClick:(UIButton *)sender;
 @end
 
 @class TendencyChartView;

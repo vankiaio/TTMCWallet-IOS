@@ -220,7 +220,7 @@
 
 - (void)configHeaderView{
     self.headerView.assestChooserLabel.text = self.currentAssestsType;
-    self.headerView.assest_balanceLabel.text = [NSString stringWithFormat:@"%@ %@", [NumberFormatter displayStringFromNumber:@(self.currentToken.balance.doubleValue)], self.currentToken.token_symbol];
+    self.headerView.assest_balanceLabel.text = [NSString stringWithFormat:@"%@ %@", [NumberFormatter displayStringFromNumber:@(self.currentToken.balance.doubleValue - self.currentToken.locked_amount.doubleValue)], self.currentToken.token_symbol];
     //TTMC not on the exchange
 //    self.headerView.assest_balance_ConvertLabel.text = [NSString stringWithFormat:@"≈%@CNY", [NumberFormatter displayStringFromNumber:[NSNumber numberWithDouble:self.currentToken.balance_cny.doubleValue]]];
 //    self.headerView.amount_ConvertLabel.text = [NSString stringWithFormat:@"≈%@CNY" , [NumberFormatter displayStringFromNumber:@(self.headerView.amountTF.text.doubleValue * self.getRateResult.data.price_cny.doubleValue)]];
