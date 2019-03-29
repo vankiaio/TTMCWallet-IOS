@@ -45,8 +45,10 @@
     }
     
     
-     NSArray *thirdSectionNameArr = [NSArray arrayWithObjects:NSLocalizedString(@"所在区块", nil) ,NSLocalizedString(@"区块时间", nil), NSLocalizedString(@"CPU消耗", nil),NSLocalizedString(@"net消耗", nil), nil];
-    NSArray *thirdSecionItemDetailArr = [NSArray arrayWithObjects:self.model.blockNum.stringValue, [NSDate getLocalDateTimeFromUTC:self.model.time], [NSString stringWithFormat:@"%@ us", self.model.cpu_usage_us], [NSString stringWithFormat:@"%@ bytes", self.model.net_usage_words],nil];
+//    NSArray *thirdSectionNameArr = [NSArray arrayWithObjects:NSLocalizedString(@"所在区块", nil) ,NSLocalizedString(@"区块时间", nil), NSLocalizedString(@"CPU消耗", nil),NSLocalizedString(@"net消耗", nil), nil];
+//    NSArray *thirdSecionItemDetailArr = [NSArray arrayWithObjects:self.model.blockNum.stringValue, [NSDate getLocalDateTimeFromUTC:self.model.time], [NSString stringWithFormat:@"%@ us", self.model.cpu_usage_us], [NSString stringWithFormat:@"%@ bytes", self.model.net_usage_words],nil];
+    NSArray *thirdSectionNameArr = [NSArray arrayWithObjects:NSLocalizedString(@"所在区块", nil) ,NSLocalizedString(@"区块时间", nil), nil];
+    NSArray *thirdSecionItemDetailArr = [NSArray arrayWithObjects:self.model.blockNum.stringValue, [NSDate getLocalDateTimeFromUTC:self.model.time],nil];
     NSMutableArray *thirdSecionModelArr = [NSMutableArray array];
     for (int i = 0 ; i < thirdSectionNameArr.count; i++) {
         OptionModel *item = [[OptionModel alloc] init];
