@@ -233,6 +233,15 @@
     [super viewDidLoad];
     if (CURRENT_AccountTable_HAS_Account) {
         
+        // after create acount, mainwin show can show account info
+        if([VALIDATE_STRING(CURRENT_ACCOUNT_NAME) isEqualToString: @""] )
+        {
+            AccountInfo *model =[[[AccountsTableManager accountTable] selectAccountTable] firstObject];
+            [[NSUserDefaults standardUserDefaults] setObject:VALIDATE_STRING(model.account_name)  forKey:Current_Account_name];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+            [self.ids removeAllObjects];
+        }
+        
         self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
         self.navigationItem.title = @"";
         

@@ -3,13 +3,13 @@
 "6dG-S2-oNi.text" = "Official Website";
 
 /* Class = "UILabel"; text = "Pocket TTMC"; ObjectID = "Br0-Vz-b7V"; */
-"Br0-Vz-b7V.text" = "Pocket TTMC";
+"Br0-Vz-b7V.text" = "TTMC Wallet";
 
 /* Class = "UILabel"; text = "微信公众号"; ObjectID = "PHu-pn-vlh"; */
 "PHu-pn-vlh.text" = "TtmcChain Public Wechat";
 
 /* Class = "UITextView"; text = "Pocket TTMC是一款跨平台的移动端 TTMC钱包应用，以“生活中的区块链，口袋里的 TTMC”为核心设计理念，除了基本的区块链钱包功能外，还接入各类基于区块链的服务和DAPP，打造一站式 TTMC生态平台，让区块链更贴近生活，更加好玩。"; ObjectID = "V29-13-nAx"; */
-"V29-13-nAx.text" = "Pocket TTMC是一款跨平台的移动端 TTMC钱包应用，以“生活中的区块链，口袋里的 TTMC”为核心设计理念，除了基本的区块链钱包功能外，还接入各类基于区块链的服务和DAPP，打造一站式 TTMC生态平台，让区块链更贴近生活，更加好玩。";
+"V29-13-nAx.text" = "TTMC Wallet是一款跨平台的移动端 TTMC钱包应用，以“生活中的区块链，口袋里的 TTMC”为核心设计理念，除了基本的区块链钱包功能外，还接入各类基于区块链的服务和DAPP，打造一站式 TTMC生态平台，让区块链更贴近生活，更加好玩。";
 
 /* Class = "UILabel"; text = "小秘书微信号"; ObjectID = "dO3-qN-m2a"; */
 "dO3-qN-m2a.text" = "Connect Us";

@@ -252,7 +252,7 @@
                     </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKl-YA-NB5" userLabel="accountBaseView">
-                    <rect key="frame" x="10" y="148" width="350" height="22"/>
+                    <rect key="frame" x="15" y="148" width="350" height="22"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEZ-SM-uzb">
                             <rect key="frame" x="0.0" y="-1" width="0.0" height="25"/>
@@ -300,7 +300,7 @@
             <constraints>
                 <constraint firstItem="pYH-sY-JUc" firstAttribute="centerY" secondItem="6w9-Qs-9bF" secondAttribute="centerY" id="2a5-Xn-yBq"/>
                 <constraint firstItem="6w9-Qs-9bF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="5rd-Ws-cnF"/>
-                <constraint firstItem="EKl-YA-NB5" firstAttribute="leading" secondItem="Dg1-hO-Q8x" secondAttribute="leading" constant="-5" id="6z8-Gw-HXp"/>
+                <constraint firstItem="EKl-YA-NB5" firstAttribute="leading" secondItem="Dg1-hO-Q8x" secondAttribute="leading" id="6z8-Gw-HXp"/>
                 <constraint firstItem="pYH-sY-JUc" firstAttribute="leading" secondItem="6w9-Qs-9bF" secondAttribute="trailing" constant="10" id="736-RU-1th"/>
                 <constraint firstItem="DET-my-HsN" firstAttribute="top" secondItem="Up3-rw-itT" secondAttribute="bottom" id="AKx-5L-lIx"/>
                 <constraint firstItem="Yqo-6x-K23" firstAttribute="top" secondItem="6w9-Qs-9bF" secondAttribute="bottom" constant="-3" id="Bfb-Ma-tbx"/>

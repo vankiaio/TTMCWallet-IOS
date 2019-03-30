@@ -11,6 +11,7 @@
 #import "BackupAccountHeaderView.h"
 #import "AppDelegate.h"
 #import "BaseTabBarController.h"
+#import "AccountManagementViewController.h"
 
 @interface BackupAccountViewController ()<NavigationViewDelegate,BackupAccountHeaderViewDelegate, LoginPasswordViewDelegate>
 @property(nonatomic, strong) NavigationView *navView;
@@ -24,6 +25,8 @@
     if (!_navView) {
         _navView = [NavigationView navigationViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, NAVIGATIONBAR_HEIGHT) LeftBtnImgName:@"back" title:NSLocalizedString(@"备份TTMC账号", nil)rightBtnImgName:@"" delegate:self];
         _navView.leftBtn.lee_theme.LeeAddButtonImage(SOCIAL_MODE, [UIImage imageNamed:@"back"], UIControlStateNormal).LeeAddButtonImage(BLACKBOX_MODE, [UIImage imageNamed:@"back_white"], UIControlStateNormal);
+        // TTMC only on wallet can't go back
+        _navView.leftBtn.enabled = false;
     }
     return _navView;
 }
@@ -90,7 +93,6 @@
             [view removeFromSuperview];
         }
         [((AppDelegate *)[[UIApplication sharedApplication] delegate]).window setRootViewController: [[BaseTabBarController alloc] init]];
-        
 //    }else if(self.backupAccountViewControllerFromVC == BackupAccountViewControllerFromPocketManagementVC){
 //        [self.navigationController popToRootViewControllerAnimated:YES];
 //    }

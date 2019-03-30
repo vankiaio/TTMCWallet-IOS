@@ -342,8 +342,8 @@
     }
     self.transferAbi_json_to_bin_request.code = self.currentToken.contract_name;
     
-    if ([self.currentToken.balance isEqualToString:@"0"] || ( self.currentToken.balance.doubleValue  < self.headerView.amountTF.text.doubleValue)) {
-        [TOASTVIEW showWithText: NSLocalizedString(@"余额不足", nil)];
+    if ([self.currentToken.balance isEqualToString:@"0"] || ( self.currentToken.balance.doubleValue - self.currentToken.locked_amount.doubleValue  < self.headerView.amountTF.text.doubleValue)) {
+        [TOASTVIEW showWithText: NSLocalizedString(@"可用余额不足", nil)];
         [self removeLoginPasswordView];
         return;
     }else{

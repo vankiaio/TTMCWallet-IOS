@@ -58,7 +58,8 @@
     }
     
     
-    NSArray *fourthSectionNameArr = [NSArray arrayWithObjects:NSLocalizedString(@"Tx id", nil),NSLocalizedString(@"合约账号", nil) , nil];
+//    NSArray *fourthSectionNameArr = [NSArray arrayWithObjects:NSLocalizedString(@"Tx id", nil),NSLocalizedString(@"合约账号", nil) , nil];
+    NSArray *fourthSectionNameArr = [NSArray arrayWithObjects:NSLocalizedString(@"Tx id", nil), nil];
     NSArray *fourthSecionItemDetailArr = [NSArray arrayWithObjects:self.model.trxid, self.model.contract, nil];
     NSMutableArray *fourthSecionModelArr = [NSMutableArray array];
     for (int i = 0 ; i < fourthSectionNameArr.count; i++) {
