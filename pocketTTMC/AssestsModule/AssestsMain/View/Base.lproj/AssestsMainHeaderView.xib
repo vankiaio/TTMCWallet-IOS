@@ -16,9 +16,9 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="assetmain_banner.png" translatesAutoresizingMaskIntoConstraints="NO" id="Up3-rw-itT">
-                    <rect key="frame" x="0.0" y="10" width="375" height="200"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="200" id="EmN-TJ-CSt"/>
+                        <constraint firstAttribute="height" constant="210" id="EmN-TJ-CSt"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总资产(￥)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6w9-Qs-9bF">
@@ -252,26 +252,26 @@
                     </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKl-YA-NB5" userLabel="accountBaseView">
-                    <rect key="frame" x="10" y="12" width="200" height="18"/>
+                    <rect key="frame" x="10" y="148" width="350" height="22"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEZ-SM-uzb">
-                            <rect key="frame" x="0.0" y="-3.5" width="0.0" height="25"/>
+                            <rect key="frame" x="0.0" y="-1" width="0.0" height="25"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="25" id="jNx-Uz-b5r"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_arrow_gray.png" translatesAutoresizingMaskIntoConstraints="NO" id="pQm-mZ-Hjs">
-                            <rect key="frame" x="6" y="2" width="16" height="14"/>
+                            <rect key="frame" x="6" y="3.5" width="16" height="16"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="16" id="7ST-mj-Q2o"/>
-                                <constraint firstAttribute="height" constant="14" id="Vr2-02-REQ"/>
+                                <constraint firstAttribute="height" constant="16" id="Vr2-02-REQ"/>
                             </constraints>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhW-Nm-6hl" userLabel="accountButton">
-                            <rect key="frame" x="0.0" y="0.0" width="200" height="18"/>
+                            <rect key="frame" x="0.0" y="0.0" width="350" height="30"/>
                             <connections>
                                 <action selector="accountBtnDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="fxt-IR-zVL"/>
                             </connections>
@@ -280,14 +280,13 @@
                     <constraints>
                         <constraint firstItem="pQm-mZ-Hjs" firstAttribute="centerY" secondItem="YEZ-SM-uzb" secondAttribute="centerY" id="0S4-gC-Mqq"/>
                         <constraint firstAttribute="trailing" secondItem="XhW-Nm-6hl" secondAttribute="trailing" id="1R1-8k-HzE"/>
-                        <constraint firstAttribute="width" constant="200" id="6Xb-ET-Svo"/>
+                        <constraint firstAttribute="width" constant="350" id="6Xb-ET-Svo"/>
                         <constraint firstItem="XhW-Nm-6hl" firstAttribute="leading" secondItem="EKl-YA-NB5" secondAttribute="leading" id="Y9Z-Go-M7R"/>
-                        <constraint firstItem="YEZ-SM-uzb" firstAttribute="centerY" secondItem="EKl-YA-NB5" secondAttribute="centerY" id="Ygx-Hh-qPM"/>
+                        <constraint firstItem="YEZ-SM-uzb" firstAttribute="centerY" secondItem="EKl-YA-NB5" secondAttribute="centerY" constant="0.5" id="Ygx-Hh-qPM"/>
                         <constraint firstItem="pQm-mZ-Hjs" firstAttribute="leading" secondItem="YEZ-SM-uzb" secondAttribute="trailing" constant="6" id="akz-9b-a7a"/>
-                        <constraint firstItem="XhW-Nm-6hl" firstAttribute="top" secondItem="EKl-YA-NB5" secondAttribute="top" id="i2Y-Em-rnR"/>
                         <constraint firstItem="YEZ-SM-uzb" firstAttribute="leading" secondItem="EKl-YA-NB5" secondAttribute="leading" id="lE3-xT-7qv"/>
-                        <constraint firstAttribute="bottom" secondItem="XhW-Nm-6hl" secondAttribute="bottom" id="pkR-xa-7xE"/>
-                        <constraint firstAttribute="height" constant="18" id="z8e-d0-2mX"/>
+                        <constraint firstItem="XhW-Nm-6hl" firstAttribute="top" secondItem="EKl-YA-NB5" secondAttribute="top" id="nl1-Lm-sH3"/>
+                        <constraint firstAttribute="bottom" secondItem="XhW-Nm-6hl" secondAttribute="bottom" constant="-8" id="pkR-xa-7xE"/>
                     </constraints>
                 </view>
                 <imageView hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addAssets.png" translatesAutoresizingMaskIntoConstraints="NO" id="b8l-bp-hDh">
@@ -316,7 +315,7 @@
                 <constraint firstAttribute="trailing" secondItem="Yqo-6x-K23" secondAttribute="trailing" constant="20" id="pxl-9Q-ZKD"/>
                 <constraint firstItem="Up3-rw-itT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="voX-Cb-Ibo"/>
                 <constraint firstAttribute="trailing" secondItem="Dg1-hO-Q8x" secondAttribute="trailing" constant="15" id="vqR-F1-5ce"/>
-                <constraint firstItem="EKl-YA-NB5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="yGQ-S3-8ql"/>
+                <constraint firstItem="EKl-YA-NB5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="148" id="yGQ-S3-8ql"/>
                 <constraint firstAttribute="trailing" secondItem="b8l-bp-hDh" secondAttribute="trailing" id="yM4-uO-VGt"/>
                 <constraint firstItem="Yqo-6x-K23" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="ycp-Fb-fYA"/>
             </constraints>
@@ -343,7 +342,7 @@
     </objects>
     <resources>
         <image name="addAssets.png" width="85" height="25"/>
-        <image name="assetmain_banner.png" width="375" height="200"/>
+        <image name="assetmain_banner.png" width="375" height="210"/>
         <image name="recieve.png" width="29" height="28"/>
         <image name="redPacket.png" width="29" height="28"/>
         <image name="resourceManage_icon.png" width="28" height="28"/>

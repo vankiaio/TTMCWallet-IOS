@@ -1320,7 +1320,7 @@
 		6E3DE997224CC0D600D9C729 /* AssestLockRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DE98A224CC0D600D9C729 /* AssestLockRecordTableViewCell.m */; };
 		6E3DE998224CC0D600D9C729 /* AssestLockRecordsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DE98C224CC0D600D9C729 /* AssestLockRecordsHeaderView.m */; };
 		6E3DE999224CC0D600D9C729 /* AssestLockRecordsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DE990224CC0D600D9C729 /* AssestLockRecordsService.m */; };
-		6EB7FA91224E3A97007878BC /* assetmain_banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB7FA90224E3A97007878BC /* assetmain_banner.png */; };
+		6EB7FA93224F1981007878BC /* assetmain_banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB7FA92224F1980007878BC /* assetmain_banner.png */; };
 		913F529E95F17E3A43092DAE /* libPods-pocketTTMC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B5C5F1FD55B2E025CB8582 /* libPods-pocketTTMC.a */; };
 /* End PBXBuildFile section */
 
@@ -3624,7 +3624,7 @@
 		6E3DE98D224CC0D600D9C729 /* AssestLockRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssestLockRecordTableViewCell.h; sourceTree = "<group>"; };
 		6E3DE98F224CC0D600D9C729 /* AssestLockRecordsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssestLockRecordsService.h; sourceTree = "<group>"; };
 		6E3DE990224CC0D600D9C729 /* AssestLockRecordsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssestLockRecordsService.m; sourceTree = "<group>"; };
-		6EB7FA90224E3A97007878BC /* assetmain_banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = assetmain_banner.png; sourceTree = "<group>"; };
+		6EB7FA92224F1980007878BC /* assetmain_banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = assetmain_banner.png; sourceTree = "<group>"; };
 		AFAE409D652850E019785CE8 /* Pods-pocketTTMC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pocketTTMC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pocketTTMC/Pods-pocketTTMC.debug.xcconfig"; sourceTree = "<group>"; };
 		D9B5C5F1FD55B2E025CB8582 /* libPods-pocketTTMC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pocketTTMC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9EE9F0D161AD0B85DB36F92 /* Pods-pocketTTMC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pocketTTMC.release.xcconfig"; path = "Pods/Target Support Files/Pods-pocketTTMC/Pods-pocketTTMC.release.xcconfig"; sourceTree = "<group>"; };
@@ -9181,7 +9181,7 @@
 		18E72E321FCC1A8800D09CA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				6EB7FA90224E3A97007878BC /* assetmain_banner.png */,
+				6EB7FA92224F1980007878BC /* assetmain_banner.png */,
 				187B63D8206B347C00D0AE86 /* feedBack@2x.png */,
 				187B63DA206B347D00D0AE86 /* feedBack@3x.png */,
 				187B63DC206B347D00D0AE86 /* right_icon_blue@2x.png */,
@@ -10562,7 +10562,7 @@
 				185D18641FE766240021AD18 /* folder@3x.png in Resources */,
 				183FF74620C159740058D010 /* transaction_history_BB@2x.png in Resources */,
 				186F69F320F4961F00FFF881 /* BPCandidateFooterView.xib in Resources */,
-				6EB7FA91224E3A97007878BC /* assetmain_banner.png in Resources */,
+				6EB7FA93224F1981007878BC /* assetmain_banner.png in Resources */,
 				185D183C1FE75ECA0021AD18 /* rectangle_UnSelected@3x.png in Resources */,
 				188A88952170527A00BE196A /* DAppExcuteMutipleActionsBaseViewTitleImage@3x.png in Resources */,
 				1842E7A821397DB90090F8EA /* transfer@2x.png in Resources */,

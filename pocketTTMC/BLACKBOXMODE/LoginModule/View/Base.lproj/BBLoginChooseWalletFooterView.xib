@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -31,7 +31,6 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfR-K6-qpQ">
                     <rect key="frame" x="67.5" y="107" width="100" height="13"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="100" id="DrF-5E-tOP"/>
                         <constraint firstAttribute="height" constant="13" id="hVy-DG-Eeo"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -46,7 +45,6 @@
                     <rect key="frame" x="208" y="107" width="150" height="13"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="13" id="Pkl-x2-ulb"/>
-                        <constraint firstAttribute="width" constant="150" id="ctG-I1-xdt"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <state key="normal" title="什么是黑匣子模式？">
@@ -105,8 +103,16 @@
                 <constraint firstItem="2EX-lh-yBb" firstAttribute="centerY" secondItem="nfR-K6-qpQ" secondAttribute="centerY" id="dIz-ec-eYi"/>
                 <constraint firstItem="dgV-2d-Per" firstAttribute="leading" secondItem="kXq-eb-XSH" secondAttribute="trailing" constant="5" id="nnO-61-jwA"/>
                 <constraint firstItem="kXq-eb-XSH" firstAttribute="top" secondItem="uEw-9v-7XG" secondAttribute="bottom" constant="10" id="qNF-vF-1ao"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dgV-2d-Per" secondAttribute="trailing" constant="20" symbolic="YES" id="ygT-yP-fXB"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="nfR-K6-qpQ"/>
+                    <exclude reference="spd-Xe-odm"/>
+                    <exclude reference="2EX-lh-yBb"/>
+                </mask>
+            </variation>
             <connections>
                 <outlet property="agreeTermBtn" destination="kXq-eb-XSH" id="4Ns-Yq-EAZ"/>
             </connections>
