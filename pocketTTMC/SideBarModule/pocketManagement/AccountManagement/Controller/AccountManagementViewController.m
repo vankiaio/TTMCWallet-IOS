@@ -517,7 +517,7 @@
     
     OptionModel *model = [[OptionModel alloc] init];
     model.optionName = NSLocalizedString(@"删除账号", nil);
-    model.detail = NSLocalizedString(@"1.删除账号后您无法管理该账号、操作其中的资产或使用该账号登录Dapp  \n2.删除账号后，您无法通过TW重新找回该账号  \n3.如果您未备份私钥，删除账号有可能导致您的账号及其中的资产丢失  \n4.删除账号前，请确保您理解删除账号的意义，并已备份私钥", nil);
+    model.detail = NSLocalizedString(@"1.删除账号后您无法管理该账号、操作其中的资产或使用该账号登录Dapp  \n2.删除账号后，您无法通过TTMC重新找回该账号  \n3.如果您未备份私钥，删除账号有可能导致您的账号及其中的资产丢失  \n4.删除账号前，请确保您理解删除账号的意义，并已备份私钥", nil);
     [self.commonDialogHasPasswordTFView setModel:model];
 }
 
@@ -571,6 +571,9 @@
         if (result) {
             [TOASTVIEW showWithText:NSLocalizedString(@"删除账号成功!", nil)];
             [self.navigationController popViewControllerAnimated:YES];
+            if([VALIDATE_STRING(CURRENT_ACCOUNT_NAME) isEqualToString: self.model.account_name]) {
+                [((AppDelegate *)[[UIApplication sharedApplication] delegate]).window setRootViewController: [[BaseTabBarController alloc] init]];
+            }
         }
     }else{
         [self.view addSubview:self.askQuestionTipView];

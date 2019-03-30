@@ -62,7 +62,7 @@
 - (RichlistDetailHeaderView *)headerView{
     if (!_headerView) {
         _headerView = [[[NSBundle mainBundle] loadNibNamed:@"RichlistDetailHeaderView" owner:nil options:nil] firstObject];
-        _headerView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 296);
+        _headerView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 270);
         _headerView.backgroundColor = [UIColor clearColor];
         
     }
@@ -212,7 +212,7 @@
         if (IsNilOrNull(self.model.displayName)) {
             return;
         }
-        self.headerView.userNameLabel.text = [NSString stringWithFormat:NSLocalizedString(@"***的钱包", nil)];
+        self.headerView.userNameLabel.text = [NSString stringWithFormat : @"%@:", [NSString stringWithFormat:NSLocalizedString(@"账号", nil)]];
         [self.headerView.avatarImg sd_setImageWithURL:String_To_URL(@"") placeholderImage:[UIImage imageNamed:@"wallet_default_avatar"]];
         self.get_token_info_service.get_token_info_request.accountName = self.model.displayName;
         [self.get_token_info_service get_token_info:^(id service, BOOL isSuccess) {

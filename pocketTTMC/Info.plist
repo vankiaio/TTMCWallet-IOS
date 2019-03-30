@@ -103,9 +103,9 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>PocketTTMC将通过相机读取二维码</string>
+	<string>TTMC Wallet将通过相机读取二维码</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>PocketTTMC将通过相册读取二维码</string>
+	<string>TTMC Wallet将通过相机读取二维码</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array/>
 	<key>UISupportedInterfaceOrientations</key>

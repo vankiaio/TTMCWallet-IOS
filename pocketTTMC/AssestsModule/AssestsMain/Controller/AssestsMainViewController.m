@@ -232,9 +232,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     if (CURRENT_AccountTable_HAS_Account) {
+        // if delete current account, set default by mainaccount
+        AccountInfo *currentAccount = [[AccountsTableManager accountTable] selectAccountTableWithAccountName:VALIDATE_STRING(CURRENT_ACCOUNT_NAME)];
         
         // after create acount, mainwin show can show account info
-        if([VALIDATE_STRING(CURRENT_ACCOUNT_NAME) isEqualToString: @""] )
+        if([VALIDATE_STRING(CURRENT_ACCOUNT_NAME) isEqualToString: @""] || currentAccount == nil)
         {
             AccountInfo *model =[[[AccountsTableManager accountTable] selectAccountTable] firstObject];
             [[NSUserDefaults standardUserDefaults] setObject:VALIDATE_STRING(model.account_name)  forKey:Current_Account_name];
@@ -384,7 +386,7 @@
                     vc.get_token_info_service_data_array = self.get_token_info_service.dataSourceArray;
                     [weakSelf.navigationController pushViewController:vc animated:YES];
                 } else if (status == AVAuthorizationStatusDenied) { // 用户拒绝当前应用访问相机
-                    UIAlertController *alertC = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"温馨提示", nil)message:NSLocalizedString(@"请去-> [设置 - 隐私 - 相机 - SGQRCodeExample] 打开访问开关", nil)preferredStyle:(UIAlertControllerStyleAlert)];
+                    UIAlertController *alertC = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"温馨提示", nil)message:NSLocalizedString(@"请去-> [设置 - 隐私 - 相机 - TTMC Wallet] 打开访问开关", nil)preferredStyle:(UIAlertControllerStyleAlert)];
                     UIAlertAction *alertA = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil)style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
                         
                     }];

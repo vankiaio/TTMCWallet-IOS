@@ -121,7 +121,7 @@
 - (UITextField *)passwordTF{
     if (!_passwordTF) {
         _passwordTF = [[UITextField alloc] init];
-        _passwordTF.placeholder = NSLocalizedString(@"输入钱包密码", nil);
+        _passwordTF.placeholder = NSLocalizedString(@"请输入钱包密码", nil);
         _passwordTF.borderStyle = UITextBorderStyleNone;
         _passwordTF.layer.borderColor = HEXCOLOR(0xEEEEEE).CGColor;
         _passwordTF.layer.borderWidth = 1;
