@@ -106,7 +106,7 @@
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
     self.navigationController.interactivePopGestureRecognizer.delegate = self;
-    self.view.lee_theme.LeeConfigBackgroundColor(@"baseView_background_color");
+    self.view.lee_theme.LeeConfigBackgroundColor(@"common_bg_white_1");
     if (LEETHEME_CURRENTTHEME_IS_SOCAIL_MODE) {
         self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
     }else if(LEETHEME_CURRENTTHEME_IS_BLACKBOX_MODE){

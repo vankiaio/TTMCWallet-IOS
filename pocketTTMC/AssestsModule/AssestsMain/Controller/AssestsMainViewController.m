@@ -271,7 +271,7 @@
         self.mainTableView.mj_header = header;
         
         self.mainTableView.mj_footer.hidden = YES;
-        self.mainTableView.backgroundColor = [UIColor clearColor];
+        self.mainTableView.backgroundColor = [UIColor whiteColor];
         
         
         

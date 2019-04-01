@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.9.0</string>
+	<string>0.9.1</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -103,9 +103,9 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>TTMC Wallet将通过相机读取二维码</string>
+	<string>TTMC Wallet will read the QR code through the camera</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>TTMC Wallet将通过相机读取二维码</string>
+	<string>TTMC Wallet will read the QR code through the camera</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array/>
 	<key>UISupportedInterfaceOrientations</key>
