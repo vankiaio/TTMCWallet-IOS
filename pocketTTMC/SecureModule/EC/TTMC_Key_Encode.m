@@ -37,16 +37,20 @@
         NSLog(@"parameter wif header bytes validate failed!");
         return NO;
     }
-    unsigned char hexChar[32]; // getRandomHexBytes[32]
+    
+    //validateWif has some bug,this time fixed it.
+    unsigned char hexChar[33]; // getRandomHexBytes[32]
     unsigned char digest[32];
     unsigned char result[32]; // Recieve randomHexByes hash result
     unsigned char last4Bytes[4];
-    memcpy(hexChar, bin+1, 32);
+//    memcpy(hexChar, bin+1, 32);
+    memcpy(hexChar, bin, 33);
     memcpy(last4Bytes, bin+33, 4);
     sha256_Raw(hexChar, 33, digest);
     sha256_Raw(digest, 32, digest);
     memcpy(result, digest, 4);
-    if (!strcmp(result, last4Bytes) ) {
+//    if (!strcmp(result, last4Bytes) ) {
+     if (memcmp(result, last4Bytes,4) ) {
         NSLog(@"parameter wif hash validate failed!");
         return NO;
     }

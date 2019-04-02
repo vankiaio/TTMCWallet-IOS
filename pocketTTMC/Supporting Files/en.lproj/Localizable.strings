@@ -429,6 +429,11 @@
 "导入账号成功!"="Imported!";
 "备份到服务成功!"="备份到服务成功!";
 "导入的私钥不匹配!"="Import private key not match!";
+"请去-> [设置 - 隐私 - 相机 - TTMC Wallet] 打开访问开关"="Go -> [Settings - Privacy - Camera - TTMC Wallet] Turn on the access switch";
+"因为系统原因, 无法访问相册"="Unable to access album for system reasons";
+"未检测到您的摄像头"="Your camera is not detected";
+"温馨提示"="Tips";
+"用户第一次同意了访问相机权限 - - %@"="The user first agreed to access camera permissions - - %@";
 
 /*
  PersonalSettingViewController.m
