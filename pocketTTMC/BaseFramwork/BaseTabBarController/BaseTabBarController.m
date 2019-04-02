@@ -149,6 +149,8 @@
         selectedAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:9];
         selectedAttrs[NSForegroundColorAttributeName] = HEXCOLOR(0xFFFFFF);
         [controller.tabBarItem setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
+        
+        controller.view.lee_theme.LeeConfigBackgroundColor(@"common_bg_white_1");
 
     }
     
