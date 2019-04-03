@@ -261,6 +261,8 @@
  */
 "语言"="Language";
 "语言切换中"="Changing Language";
+"当前语言已经是中文！"="The current language is already Chinese!";
+"当前语言已经是英文！"="The current language is already English!";
 
 /*
  SystemSettingViewController.m
