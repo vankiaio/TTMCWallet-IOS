@@ -5,7 +5,7 @@
 //  Created by ttmcchain on 2017/11/27.
 //  Copyright © 2017年 ttmcchain. All rights reserved.
 //
-#define YOUMENG_AppKey @"5b39ed6fb27b0a50be00012d"
+#define YOUMENG_AppKey @"5ca4601d570df31e610013df"
 
 #import "AppDelegate.h"
 #import "BaseTabBarController.h"
