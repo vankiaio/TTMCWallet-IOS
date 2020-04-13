@@ -6,6 +6,10 @@
 build/
 DerivedData/
 
+## distribute
+distribute/pocketTTMC
+distribute/pocketTTMC.app
+
 ## Various settings
 *.pbxuser
 !default.pbxuser
