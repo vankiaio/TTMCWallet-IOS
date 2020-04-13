@@ -15,7 +15,7 @@
 "XV9-EX-OMy.text" = "Set the wallet password";
 
 /* Class = "UIButton"; normalTitle = "下一步"; ObjectID = "hur-tl-MQQ"; */
-"hur-tl-MQQ.normalTitle" = "next_step";
+"hur-tl-MQQ.normalTitle" = "Next step";
 
 /* Class = "UITextField"; placeholder = "名称"; ObjectID = "jlY-K1-SyL"; */
 "jlY-K1-SyL.placeholder" = "Name";

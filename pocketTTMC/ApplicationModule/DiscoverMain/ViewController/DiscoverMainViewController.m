@@ -247,7 +247,8 @@
 
 
 - (void)addCommonDialogHasTitleView{
-    [[UIApplication sharedApplication].keyWindow addSubview:self.commonDialogHasTitleView];
+//    [[UIApplication sharedApplication].keyWindow addSubview:self.commonDialogHasTitleView];
+    [[[UIApplication sharedApplication] delegate].window addSubview:self.commonDialogHasTitleView];
     
     OptionModel *model = [[OptionModel alloc] init];
     model.optionName = NSLocalizedString(@"注意", nil);
@@ -256,7 +257,8 @@
 }
 
 - (void)addCommonDialogHasTitleViewOfAddAccount{
-    [[UIApplication sharedApplication].keyWindow addSubview:self.commonDialogHasTitleView];
+//    [[UIApplication sharedApplication].keyWindow addSubview:self.commonDialogHasTitleView];
+    [[[UIApplication sharedApplication] delegate].window addSubview:self.commonDialogHasTitleView];
     
     self.commonDialogHasTitleView.contentTextView.textAlignment = NSTextAlignmentCenter;
     self.commonDialogHasTitleView.comfirmBtnText = NSLocalizedString(@"去添加", nil);

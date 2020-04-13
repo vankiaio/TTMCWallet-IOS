@@ -713,7 +713,8 @@
     [self.getVersionInfoRequest getDataSusscess:^(id DAO, id data) {
         weakSelf.versionUpdateModel = [VersionUpdateModel mj_objectWithKeyValues:data[@"data"]];
         if (weakSelf.versionUpdateModel.versionCode.integerValue > [weakSelf queryVersionNumberInBundle] ) {
-            [[UIApplication sharedApplication].keyWindow addSubview:weakSelf.versionUpdateTipView];
+//            [[UIApplication sharedApplication].keyWindow addSubview:weakSelf.versionUpdateTipView];
+            [[[UIApplication sharedApplication] delegate].window addSubview:weakSelf.versionUpdateTipView];
             [weakSelf.versionUpdateTipView setModel:weakSelf.versionUpdateModel];
         }else{
             
@@ -841,7 +842,8 @@
 }
 
 - (void)addCommonDialogHasTitleView{
-    [[UIApplication sharedApplication].keyWindow addSubview:self.commonDialogHasTitleView];
+//    [[UIApplication sharedApplication].keyWindow addSubview:self.commonDialogHasTitleView];
+    [[[UIApplication sharedApplication] delegate].window addSubview:self.commonDialogHasTitleView];
     
     self.commonDialogHasTitleView.contentTextView.textAlignment = NSTextAlignmentCenter;
     self.commonDialogHasTitleView.comfirmBtnText = NSLocalizedString(@"去添加", nil);
@@ -853,7 +855,8 @@
 }
 
 - (void)addCommonDialogHasTitleViewOfSetPassword{
-    [[UIApplication sharedApplication].keyWindow addSubview:self.commonDialogHasTitleView];
+//    [[UIApplication sharedApplication].keyWindow addSubview:self.commonDialogHasTitleView];
+    [[[UIApplication sharedApplication] delegate].window addSubview:self.commonDialogHasTitleView];
     self.commonDialogHasTitleView.contentTextView.textAlignment = NSTextAlignmentCenter;
     self.commonDialogHasTitleView.comfirmBtnText = NSLocalizedString(@"去设置", nil);
     

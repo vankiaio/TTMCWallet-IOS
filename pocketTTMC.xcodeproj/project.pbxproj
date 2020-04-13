@@ -162,9 +162,6 @@
 		181EC32120C58C20001994D3 /* client.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 181EC31F20C58C20001994D3 /* client.p12 */; };
 		181EC32220C58C20001994D3 /* server.cer in Resources */ = {isa = PBXBuildFile; fileRef = 181EC32020C58C20001994D3 /* server.cer */; };
 		182007412069E1F100D281EF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182007402069E1E600D281EF /* SystemConfiguration.framework */; };
-		182007432069E27000D281EF /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 182007422069E27000D281EF /* libz.1.dylib */; };
-		182007452069E2AD00D281EF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 182007442069E2AC00D281EF /* libsqlite3.dylib */; };
-		182007472069E2E300D281EF /* libc++.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 182007462069E2E300D281EF /* libc++.1.dylib */; };
 		1820074A2069E30500D281EF /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182007492069E2FA00D281EF /* CoreTelephony.framework */; };
 		1820074C2069E31300D281EF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1820074B2069E30C00D281EF /* CFNetwork.framework */; };
 		1820075A2069F3E600D281EF /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 182007552069F3E500D281EF /* libWeChatSDK.a */; };
@@ -964,8 +961,6 @@
 		18BA1F18211168F7008558DE /* vip_create_account@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18BA1F08211168F6008558DE /* vip_create_account@2x.png */; };
 		18BA1F19211168F7008558DE /* wechat_pay_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18BA1F09211168F6008558DE /* wechat_pay_icon@2x.png */; };
 		18BA1F1B2111AD61008558DE /* alipay_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 18BA1F1A2111AD61008558DE /* alipay_icon.png */; };
-		18BA1F1E2111B6F3008558DE /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18BA1F1C2111B6F2008558DE /* AlipaySDK.bundle */; };
-		18BA1F1F2111B6F3008558DE /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BA1F1D2111B6F3008558DE /* AlipaySDK.framework */; };
 		18BA1F212111B739008558DE /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BA1F202111B738008558DE /* libc++.tbd */; };
 		18BA1F232111B762008558DE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BA1F222111B761008558DE /* QuartzCore.framework */; };
 		18BA1F252111B778008558DE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BA1F242111B778008558DE /* CoreText.framework */; };
@@ -1089,11 +1084,6 @@
 		18CEA64021022E9400B2BFE2 /* RecieveTokenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CEA63F21022E9400B2BFE2 /* RecieveTokenModel.m */; };
 		18CEA641210233A500B2BFE2 /* PocketManagementHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CEA643210233A500B2BFE2 /* PocketManagementHeaderView.xib */; };
 		18CEA64B2105781600B2BFE2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CEA64A2105781600B2BFE2 /* libz.tbd */; };
-		18CEA64E21057DCF00B2BFE2 /* UMCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CEA64D21057DCF00B2BFE2 /* UMCommon.framework */; };
-		18CEA65021057DDB00B2BFE2 /* UMAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CEA64F21057DDB00B2BFE2 /* UMAnalytics.framework */; };
-		18CEA65221057DEB00B2BFE2 /* SecurityEnvSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CEA65121057DEB00B2BFE2 /* SecurityEnvSDK.framework */; };
-		18CEA65621057DFB00B2BFE2 /* UMCommonLog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18CEA65521057DFB00B2BFE2 /* UMCommonLog.bundle */; };
-		18CEA65821057E0300B2BFE2 /* UMCommonLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CEA65721057E0300B2BFE2 /* UMCommonLog.framework */; };
 		18CEA65A21057EBD00B2BFE2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CEA65921057EBD00B2BFE2 /* libsqlite3.tbd */; };
 		18CEA6672105D22500B2BFE2 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CEA6652105D22500B2BFE2 /* RootNavigationController.m */; };
 		18CEA66C2105D25400B2BFE2 /* XYTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CEA66A2105D25400B2BFE2 /* XYTransition.m */; };
@@ -1320,6 +1310,10 @@
 		6E3DE997224CC0D600D9C729 /* AssestLockRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DE98A224CC0D600D9C729 /* AssestLockRecordTableViewCell.m */; };
 		6E3DE998224CC0D600D9C729 /* AssestLockRecordsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DE98C224CC0D600D9C729 /* AssestLockRecordsHeaderView.m */; };
 		6E3DE999224CC0D600D9C729 /* AssestLockRecordsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DE990224CC0D600D9C729 /* AssestLockRecordsService.m */; };
+		6E73B74A24441AF800E83826 /* UMCommonLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E73B74924441AF800E83826 /* UMCommonLog.framework */; };
+		6E73B74E24441B1900E83826 /* UMCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E73B74B24441B1800E83826 /* UMCommon.framework */; };
+		6E73B74F24441B1900E83826 /* UMAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E73B74C24441B1800E83826 /* UMAnalytics.framework */; };
+		6E73B75024441B1900E83826 /* UTDID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E73B74D24441B1800E83826 /* UTDID.framework */; };
 		6EB7FA93224F1981007878BC /* assetmain_banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB7FA92224F1980007878BC /* assetmain_banner.png */; };
 		913F529E95F17E3A43092DAE /* libPods-pocketTTMC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B5C5F1FD55B2E025CB8582 /* libPods-pocketTTMC.a */; };
 /* End PBXBuildFile section */
@@ -3237,11 +3231,6 @@
 		18CEA645210233A800B2BFE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/PocketManagementHeaderView.strings; sourceTree = "<group>"; };
 		18CEA647210233A900B2BFE2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/PocketManagementHeaderView.strings"; sourceTree = "<group>"; };
 		18CEA64A2105781600B2BFE2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		18CEA64D21057DCF00B2BFE2 /* UMCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommon.framework; sourceTree = "<group>"; };
-		18CEA64F21057DDB00B2BFE2 /* UMAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMAnalytics.framework; sourceTree = "<group>"; };
-		18CEA65121057DEB00B2BFE2 /* SecurityEnvSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SecurityEnvSDK.framework; sourceTree = "<group>"; };
-		18CEA65521057DFB00B2BFE2 /* UMCommonLog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMCommonLog.bundle; sourceTree = "<group>"; };
-		18CEA65721057E0300B2BFE2 /* UMCommonLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommonLog.framework; sourceTree = "<group>"; };
 		18CEA65921057EBD00B2BFE2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		18CEA6652105D22500B2BFE2 /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
 		18CEA6662105D22500B2BFE2 /* RootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
@@ -3624,6 +3613,10 @@
 		6E3DE98D224CC0D600D9C729 /* AssestLockRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssestLockRecordTableViewCell.h; sourceTree = "<group>"; };
 		6E3DE98F224CC0D600D9C729 /* AssestLockRecordsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssestLockRecordsService.h; sourceTree = "<group>"; };
 		6E3DE990224CC0D600D9C729 /* AssestLockRecordsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssestLockRecordsService.m; sourceTree = "<group>"; };
+		6E73B74924441AF800E83826 /* UMCommonLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommonLog.framework; sourceTree = "<group>"; };
+		6E73B74B24441B1800E83826 /* UMCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommon.framework; sourceTree = "<group>"; };
+		6E73B74C24441B1800E83826 /* UMAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMAnalytics.framework; sourceTree = "<group>"; };
+		6E73B74D24441B1800E83826 /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UTDID.framework; sourceTree = "<group>"; };
 		6EB7FA92224F1980007878BC /* assetmain_banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = assetmain_banner.png; sourceTree = "<group>"; };
 		AFAE409D652850E019785CE8 /* Pods-pocketTTMC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pocketTTMC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pocketTTMC/Pods-pocketTTMC.debug.xcconfig"; sourceTree = "<group>"; };
 		D9B5C5F1FD55B2E025CB8582 /* libPods-pocketTTMC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pocketTTMC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -3638,27 +3631,23 @@
 				18D02F52214F91AB006D2776 /* libSystem.tbd in Frameworks */,
 				18BA1F2D2111B7CA008558DE /* CoreMotion.framework in Frameworks */,
 				18BA1F2B2111B7BC008558DE /* Foundation.framework in Frameworks */,
+				6E73B74F24441B1900E83826 /* UMAnalytics.framework in Frameworks */,
 				18BA1F292111B79E008558DE /* UIKit.framework in Frameworks */,
+				6E73B75024441B1900E83826 /* UTDID.framework in Frameworks */,
 				18BA1F272111B78A008558DE /* CoreGraphics.framework in Frameworks */,
+				6E73B74A24441AF800E83826 /* UMCommonLog.framework in Frameworks */,
+				6E73B74E24441B1900E83826 /* UMCommon.framework in Frameworks */,
 				18BA1F252111B778008558DE /* CoreText.framework in Frameworks */,
 				18BA1F232111B762008558DE /* QuartzCore.framework in Frameworks */,
 				18BA1F212111B739008558DE /* libc++.tbd in Frameworks */,
 				18CEA65A21057EBD00B2BFE2 /* libsqlite3.tbd in Frameworks */,
 				18CEA64B2105781600B2BFE2 /* libz.tbd in Frameworks */,
-				18BA1F1F2111B6F3008558DE /* AlipaySDK.framework in Frameworks */,
 				1820076D206A719000D281EF /* Security.framework in Frameworks */,
-				18CEA65221057DEB00B2BFE2 /* SecurityEnvSDK.framework in Frameworks */,
 				1820075A2069F3E600D281EF /* libWeChatSDK.a in Frameworks */,
 				1820076C206A668E00D281EF /* TencentOpenAPI.framework in Frameworks */,
 				1820074C2069E31300D281EF /* CFNetwork.framework in Frameworks */,
 				1820074A2069E30500D281EF /* CoreTelephony.framework in Frameworks */,
-				182007472069E2E300D281EF /* libc++.1.dylib in Frameworks */,
-				18CEA65821057E0300B2BFE2 /* UMCommonLog.framework in Frameworks */,
-				182007452069E2AD00D281EF /* libsqlite3.dylib in Frameworks */,
-				18CEA64E21057DCF00B2BFE2 /* UMCommon.framework in Frameworks */,
-				182007432069E27000D281EF /* libz.1.dylib in Frameworks */,
 				182007412069E1F100D281EF /* SystemConfiguration.framework in Frameworks */,
-				18CEA65021057DDB00B2BFE2 /* UMAnalytics.framework in Frameworks */,
 				913F529E95F17E3A43092DAE /* libPods-pocketTTMC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -8565,11 +8554,10 @@
 		18CEA64C21057DC600B2BFE2 /* YouMeng */ = {
 			isa = PBXGroup;
 			children = (
-				18CEA65721057E0300B2BFE2 /* UMCommonLog.framework */,
-				18CEA65521057DFB00B2BFE2 /* UMCommonLog.bundle */,
-				18CEA65121057DEB00B2BFE2 /* SecurityEnvSDK.framework */,
-				18CEA64F21057DDB00B2BFE2 /* UMAnalytics.framework */,
-				18CEA64D21057DCF00B2BFE2 /* UMCommon.framework */,
+				6E73B74C24441B1800E83826 /* UMAnalytics.framework */,
+				6E73B74B24441B1800E83826 /* UMCommon.framework */,
+				6E73B74D24441B1800E83826 /* UTDID.framework */,
+				6E73B74924441AF800E83826 /* UMCommonLog.framework */,
 			);
 			path = YouMeng;
 			sourceTree = "<group>";
@@ -10290,7 +10278,6 @@
 				18291ECF20EC63A800D19CB9 /* account_icon@3x.png in Resources */,
 				18BE5EE42188419B001B4610 /* resourceManage_icon@2x.png in Resources */,
 				18CEA68C2105D9BE00B2BFE2 /* application_unSelect@3x.png in Resources */,
-				18CEA65621057DFB00B2BFE2 /* UMCommonLog.bundle in Resources */,
 				1816919E20BF80EC00BF49A8 /* vote_box@2x.png in Resources */,
 				186BDC852153A96E001190A7 /* transfer_icon@2x.png in Resources */,
 				18CE932921A2B2F7002F958E /* ImportAccountWithoutAccountNameSinglePrivateKeyModeHeaderView.xib in Resources */,
@@ -10340,7 +10327,6 @@
 				1842E7AB21397DB90090F8EA /* transfer@3x.png in Resources */,
 				185BA3B620BBB16500F63674 /* slider_blue@2x.png in Resources */,
 				185D18171FE7596E0021AD18 /* pERichList@2x.png in Resources */,
-				18BA1F1E2111B6F3008558DE /* AlipaySDK.bundle in Resources */,
 				187D9BF22080C02F0059BD2A /* qq_Zone@2x.png in Resources */,
 				185BA39520BB9AED00F63674 /* messageCenter_BB@3x .png in Resources */,
 				1820076B206A668E00D281EF /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
@@ -12533,6 +12519,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/pocketTTMC/ThirdLib/YouMeng",
+					"$(PROJECT_DIR)/pocketTTMC/ThirdLib/YouMeng/analytics/analytics_ios_6.1.0",
+					"$(PROJECT_DIR)/pocketTTMC/ThirdLib/YouMeng/thirdparties/thirdparties_ios_1.0.5",
+					"$(PROJECT_DIR)/pocketTTMC/ThirdLib/YouMeng/umcommonlog/umcommonlog_ios_1.0.0",
+					"$(PROJECT_DIR)/pocketTTMC/ThirdLib/YouMeng/common/common_ios_2.1.4/normal",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/pocketTTMC/Prefix.pch";
@@ -12578,6 +12568,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/pocketTTMC/ThirdLib/YouMeng",
+					"$(PROJECT_DIR)/pocketTTMC/ThirdLib/YouMeng/analytics/analytics_ios_6.1.0",
+					"$(PROJECT_DIR)/pocketTTMC/ThirdLib/YouMeng/thirdparties/thirdparties_ios_1.0.5",
+					"$(PROJECT_DIR)/pocketTTMC/ThirdLib/YouMeng/umcommonlog/umcommonlog_ios_1.0.0",
+					"$(PROJECT_DIR)/pocketTTMC/ThirdLib/YouMeng/common/common_ios_2.1.4/normal",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/pocketTTMC/Prefix.pch";

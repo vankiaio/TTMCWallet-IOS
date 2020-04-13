@@ -20,7 +20,7 @@ typedef NS_ENUM(NSInteger, PaymentWay) {
 #import "WXApiRequestHandler.h"
 #import "WXApiManager.h"
 #import "WechatAuthSDK.h"
-#import <AlipaySDK/AlipaySDK.h>
+//#import <AlipaySDK/AlipaySDK.h>
 #import "GetAccountRequest.h"
 #import "GetAccount.h"
 #import "GetAccountResult.h"
@@ -336,21 +336,21 @@ NSString * const WechatPayDidFinishNotification = @"WechatPayDidFinishNotificati
 
 - (void)doAPPay
 {
-    self.payRegistAccountService.createAccountOrderRequest.payChannel = @"1";//支付宝支付
-    [ThirdPayManager sharedManager].thirdPayType = kAlipay;
-    [SVProgressHUD showWithStatus:nil];
-    [self configCreateAccountOrderRequestParams];
-    [self.payRegistAccountService createAccountOrderByAliPay:^(AlipayRespResult *result, BOOL isSuccess) {
-        if (isSuccess) {
-            NSString *orderString = result.data;
-//
-            // NOTE: 调用支付结果开始支付
-            NSString *appScheme = @"PocketTtmc";
-            [[AlipaySDK defaultService] payOrder:orderString fromScheme:appScheme callback:^(NSDictionary *resultDic) {
-                NSLog(@"reslut = %@",resultDic);
-            }];
-        }
-    }];
+//    self.payRegistAccountService.createAccountOrderRequest.payChannel = @"1";//支付宝支付
+//    [ThirdPayManager sharedManager].thirdPayType = kAlipay;
+//    [SVProgressHUD showWithStatus:nil];
+//    [self configCreateAccountOrderRequestParams];
+//    [self.payRegistAccountService createAccountOrderByAliPay:^(AlipayRespResult *result, BOOL isSuccess) {
+//        if (isSuccess) {
+//            NSString *orderString = result.data;
+////
+//            // NOTE: 调用支付结果开始支付
+//            NSString *appScheme = @"PocketTtmc";
+//            [[AlipaySDK defaultService] payOrder:orderString fromScheme:appScheme callback:^(NSDictionary *resultDic) {
+//                NSLog(@"reslut = %@",resultDic);
+//            }];
+//        }
+//    }];
 
 }
 
